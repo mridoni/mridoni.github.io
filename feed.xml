@@ -20,7 +20,7 @@
         <updated>2021-12-30T14:51:39+01:00</updated>
             <summary>
                 <![CDATA[
-                    I decided to start these pages (well, there's only one at the moment, but you never know) to provide some feedback on what I am working on in Gix-IDE and in other software projects (some related, others not) that I will be releasing in a&hellip;
+                    I decided to start these pages (well, there's only one at the moment, but you never know) to provide some feedback on what I am working on in Gix-IDE and in other software projects (some related, others not) that I will be releasing in a few weeks. I deemed this necessary (or at least useful) because Gix-IDE is currently updated once in a while, basically when I think a release is ready, or due, and I wanted to fill the&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -48,7 +48,7 @@
         <updated>2021-12-30T14:31:34+01:00</updated>
             <summary>
                 <![CDATA[
-                    The new version of Gix-IDE will be published around mid-January. It will ship with several fixes in the ESQL preprocessor, both the version integrated in Gix-IDE and the standalone one. Separate install packages for GixSQL will also be available (for Windows and Linux, as usual)&hellip;
+                    The new version of Gix-IDE will be published around mid-January. It will ship with several fixes in the ESQL preprocessor, both the version integrated in Gix-IDE and the standalone one. Separate install packages for GixSQL will also be available (for Windows and Linux, as usual) and it will be possibile to build GixSQL only instead of the whole IDE. This version will also integrate assorted fixes for issues like debugging on Windows/x86 and startup errors. Check this page, GnuCOBOL's contribution&hellip;
                 ]]>
             </summary>
         <content type="html">
