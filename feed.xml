@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>mridoni&#x27;s development blog</title>
+    <link href="https://mridoni.github.io/feed.xml" rel="self" />
+    <link href="https://mridoni.github.io" />
+    <updated>2021-12-30T14:51:39+01:00</updated>
+    <author>
+        <name>Marco Ridoni</name>
+    </author>
+    <id>https://mridoni.github.io</id>
+
+    <entry>
+        <title>Gix-IDE (and more): next steps</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gix-ide-and-more-next-steps.html"/>
+        <id>https://mridoni.github.io/gix-ide-and-more-next-steps.html</id>
+
+        <updated>2021-12-30T14:51:39+01:00</updated>
+            <summary>
+                <![CDATA[
+                    I decided to start these pages (well, there's only one at the moment, but you never know) to provide some feedback on what I am working on in Gix-IDE and in other software projects (some related, others not) that I will be releasing in a&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>I decided to start these pages (well, there's only one at the moment, but you never know) to provide some feedback on what I am working on in Gix-IDE and in other software projects (some related, others not) that I will be releasing in a few weeks.</p>
+<p>I deemed this necessary (or at least useful) because Gix-IDE is currently updated once in a while, basically when I think a release is ready, or due, and I wanted to fill the gap between one release and the other, and let people know that, well, I am still working on it or that, when duty (my day-job) calls, you'll have to be patient.</p>
+<p>The next release (1.0.7) is almost ready, as you can read in <a href="https://mridoni.github.io/gix-ide-107-is-coming.html" target="_blank" rel="noopener noreferrer">another post</a>. After that I will restart the work I began a couple of months ago and that involves a complete refactoring of the debugger. The debugger will be a separate module (actually two, at least on Windows, for x64 and x86) and the IDE will communicate with it through a well-defined protocol, that I intend to document (time-constraints permitting, of course). This will have important consequences:</p>
+<ol>
+<li>On Windows (and possibly on Linux) it will be possible to debug programs for a different (but obviously supported) architecture: in practice this means that on x64 Windows you will be able to debug both x64 and x86 programs from either version of the IDE, while at the moment you can only debug programs compiled for you host architecture (actually the architecture Gix-IDE was compiled for).</li>
+<li>It will be possibile to have remote debugging and it will be easier to implement an "attach and debug" feature</li>
+<li>It will be possible to use the debugger to develop your own debugging client</li>
+</ol>
+<p>I am not promising that all these features will be present in the first major release (it will probably be named 1.1.x) but this is definitely the road ahead.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Gix-IDE 1.0.7 is coming</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gix-ide-107-is-coming.html"/>
+        <id>https://mridoni.github.io/gix-ide-107-is-coming.html</id>
+
+        <updated>2021-12-30T14:31:34+01:00</updated>
+            <summary>
+                <![CDATA[
+                    The new version of Gix-IDE will be published around mid-January. It will ship with several fixes in the ESQL preprocessor, both the version integrated in Gix-IDE and the standalone one. Separate install packages for GixSQL will also be available (for Windows and Linux, as usual)&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>The new version of Gix-IDE will be published around mid-January. It will ship with several fixes in the ESQL preprocessor, both the version integrated in Gix-IDE and the standalone one.</p>
+<p>Separate install packages for GixSQL will also be available (for Windows and Linux, as usual) and it will be possibile to build GixSQL only instead of the whole IDE.</p>
+<p>This version will also integrate assorted fixes for issues like debugging on Windows/x86 and startup errors.</p>
+<p>Check this page, GnuCOBOL's contribution <a href="https://sourceforge.net/p/gnucobol/discussion/contrib/" target="_blank" rel="noopener noreferrer">GnuCOBOL - Contributions</a> or GitHub's <a href="https://github.com/mridoni/gix/releases" target="_blank" rel="noopener noreferrer">Gix-IDE Releases </a>page for an update</p>
+            ]]>
+        </content>
+    </entry>
+</feed>
