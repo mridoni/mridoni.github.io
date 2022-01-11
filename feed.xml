@@ -3,7 +3,7 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-01-11T17:35:49+01:00</updated>
+    <updated>2022-01-11T17:39:06+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://mridoni.github.io/gix-ide-107-is-behind-the-corner.html"/>
         <id>https://mridoni.github.io/gix-ide-107-is-behind-the-corner.html</id>
 
-        <updated>2022-01-11T17:35:49+01:00</updated>
+        <updated>2022-01-11T17:39:06+01:00</updated>
             <summary>
                 <![CDATA[
                     The new release of Gix-IDE is coming along steadily. This will be the first one to undergo automated testing, a change that was necessary, given that the different combinations the IDE can work under (e.g. with MSVC or MinGW compilers, with/without ESQL, x86/x64, etc.) were simply too numerous to continue to test manually and avoid regressions. The 144 tests that I have developed so far - rather obviously - do not aim to reach complete&hellip;
