@@ -3,7 +3,7 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-01-11T17:18:40+01:00</updated>
+    <updated>2022-01-11T17:19:24+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
@@ -17,16 +17,15 @@
         <link href="https://mridoni.github.io/gix-ide-107-is-behind-the-corner.html"/>
         <id>https://mridoni.github.io/gix-ide-107-is-behind-the-corner.html</id>
 
-        <updated>2022-01-11T17:18:40+01:00</updated>
+        <updated>2022-01-11T17:19:24+01:00</updated>
             <summary>
                 <![CDATA[
-                    Gix-IDE 1.0.7 is behind the corner The new release of Gix-IDE is coming along steadily. This will be the first one to undergo automated testing, a change that was necessary, given that the different combinations the IDE can work under (e.g. with MSVC or MinGW compilers, with/without ESQL, x86/x64, etc.) were simply too numerous to continue to test manually and avoid regressions. The 144 tests that I have developed so far - rather obviously - do not aim to reach&hellip;
+                    The new release of Gix-IDE is coming along steadily. This will be the first one to undergo automated testing, a change that was necessary, given that the different combinations the IDE can work under (e.g. with MSVC or MinGW compilers, with/without ESQL, x86/x64, etc.) were simply too numerous to continue to test manually and avoid regressions. The 144 tests that I have developed so far - rather obviously - do not aim to reach complete coverage but represent a well-known&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <h3>Gix-IDE 1.0.7 is behind the corner</h3>
-<p>The new release of Gix-IDE is coming along steadily. This will be the first one to undergo automated testing, a change that was necessary, given that the different combinations the IDE can work under (e.g. with MSVC or MinGW compilers, with/without ESQL, x86/x64, etc.) were simply too numerous to continue to test manually and avoid regressions. The 144 tests that I have developed so far - <span style="font-size: 18.4px; color: var(--text-editor-body-color); font-family: var(--font-base); font-weight: var(--font-weight-normal);">rather obviously - </span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">do not aim to reach complete coverage but represent a well-known set of common scenarios like "build and run" for different platforms and environments. Debugging is also being tested, with breakpoints and variable inspection being checked. More tests will be added in the future.</span></p>
+                <p>The new release of Gix-IDE is coming along steadily. This will be the first one to undergo automated testing, a change that was necessary, given that the different combinations the IDE can work under (e.g. with MSVC or MinGW compilers, with/without ESQL, x86/x64, etc.) were simply too numerous to continue to test manually and avoid regressions. The 144 tests that I have developed so far - <span style="font-size: 18.4px; color: var(--text-editor-body-color); font-family: var(--font-base); font-weight: var(--font-weight-normal);">rather obviously - </span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">do not aim to reach complete coverage but represent a well-known set of common scenarios like "build and run" for different platforms and environments. Debugging is also being tested, with breakpoints and variable inspection being checked. More tests will be added in the future.</span></p>
 <p>Some technical notes: the tests are currently Windows-only: unfortunately a lot of stuff, when testing the UI, is platform specific (Windows vs X11, Qt notwithstanding) and while I'd like to put together something to test on Linux, simply I don't have enough time or resources. The tests (whose code you will find in the upcoming source release) are written in C#, using MSTest  and <a href="https://github.com/FlaUI/FlaUI" title="FlaUI on GitHub" target="_blank" rel="noopener noreferrer">FlaUI</a> instead of C++ because, well, it was just far easier and faster to develop them this way and being able to run them in Visual Studio.</p>
 <p>The testing framework uses a helper module (testhlpr.dll), that is loaded by the IDE when it starts (only if a given environment variable is set and if the DLL is present in the PATH) and opens a server connection to expose some internals of the IDE to be used in the testing process. This is unfortunately needed because Qt does not expose many properties of the native widgets it creates in a way suitable to testing (i.e. no Automation IDs) and on the other hand it doesn't allow for easy inspection of its custom-drawn widgets from a testing framework. Yes, there are Qt testing frameworks that - supposedly - do this and do it very well, but at cost that for a project like this is simply insane. Given my (and I suppose anyone else's) dislike for applications that open unwanted network connections, testhlpr.dll will not be shipped in the binary packages while its source, as usual, will be available in the source tree.</p>
 <p>Packages for Gix-IDE 1.0.7 should be available around the next weekend.</p>
