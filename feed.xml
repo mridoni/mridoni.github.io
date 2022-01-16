@@ -3,12 +3,49 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-01-11T17:39:06+01:00</updated>
+    <updated>2022-01-16T11:39:36+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>Gix-IDE v1.0.7 is out</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gix-ide-v107-is-out.html"/>
+        <id>https://mridoni.github.io/gix-ide-v107-is-out.html</id>
+
+        <updated>2022-01-16T11:39:36+01:00</updated>
+            <summary>
+                <![CDATA[
+                    The new release of Gix-IDE (1.0.7) has just been Gix-IDE 1.07 on GitHub. This is a maintenance release that fixes some bugs, provides separate packages for GixSQL and adds automated tests. Packages available: A summary of new features and fixes: Fixed several bugs in gixpp and in ESQL preprocessing Fixed a bug that prevented debugging from working on Windows x86 Fixed a DLL/EXE build bug Fixed a debugger run issue (Windows) Added separate build scripts/solution&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>The new release of Gix-IDE (1.0.7) has just been <a href="https://github.com/mridoni/gix/releases/tag/v1.0.7" target="_blank" rel="noopener noreferrer">Gix-IDE 1.07 on GitHub</a>. </p>
+<p>This is a maintenance release that fixes some bugs, provides separate packages for GixSQL and adds automated tests.</p>
+<p>Packages available:</p>
+<ul>
+<li>Windows x86</li>
+<li>Windows x64</li>
+<li>Linux x64 (Ubuntu 20.04)</li>
+</ul>
+<p>A summary of new features and fixes:</p>
+<ul>
+<li>Fixed several bugs in gixpp and in ESQL preprocessing</li>
+<li>Fixed a bug that prevented debugging from working on Windows x86</li>
+<li>Fixed a DLL/EXE build bug</li>
+<li>Fixed a debugger run issue (Windows)</li>
+<li>Added separate build scripts/solution files for GixSQL</li>
+<li>Added automated tests (Windows)</li>
+<li>Improved GixSQL documentation, with a command line example</li>
+</ul>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Gix-IDE 1.0.7 is behind the corner</title>
         <author>
