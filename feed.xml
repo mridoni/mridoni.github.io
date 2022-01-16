@@ -3,7 +3,7 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-01-16T11:39:36+01:00</updated>
+    <updated>2022-01-16T11:42:19+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
@@ -17,15 +17,15 @@
         <link href="https://mridoni.github.io/gix-ide-v107-is-out.html"/>
         <id>https://mridoni.github.io/gix-ide-v107-is-out.html</id>
 
-        <updated>2022-01-16T11:39:36+01:00</updated>
+        <updated>2022-01-16T11:42:19+01:00</updated>
             <summary>
                 <![CDATA[
-                    The new release of Gix-IDE (1.0.7) has just been Gix-IDE 1.07 on GitHub. This is a maintenance release that fixes some bugs, provides separate packages for GixSQL and adds automated tests. Packages available: A summary of new features and fixes: Fixed several bugs in gixpp and in ESQL preprocessing Fixed a bug that prevented debugging from working on Windows x86 Fixed a DLL/EXE build bug Fixed a debugger run issue (Windows) Added separate build scripts/solution&hellip;
+                    The new release of Gix-IDE (1.0.7) has just been published on GitHub. This is a maintenance release that fixes some bugs, provides separate packages for GixSQL and adds automated tests. Packages available: A summary of new features and fixes: Fixed several bugs in gixpp and in ESQL preprocessing Fixed a bug that prevented debugging from working on Windows x86 Fixed a DLL/EXE build bug Fixed a debugger run issue (Windows) Added separate build scripts/solution files&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>The new release of Gix-IDE (1.0.7) has just been <a href="https://github.com/mridoni/gix/releases/tag/v1.0.7" target="_blank" rel="noopener noreferrer">Gix-IDE 1.07 on GitHub</a>. </p>
+                <p>The new release of Gix-IDE (1.0.7) has just been <a href="https://github.com/mridoni/gix/releases/tag/v1.0.7" target="_blank" rel="noopener noreferrer">published on GitHub</a><a href="#INTERNAL_LINK#/tag/NaN" target="_blank" rel="noopener noreferrer"></a>. </p>
 <p>This is a maintenance release that fixes some bugs, provides separate packages for GixSQL and adds automated tests.</p>
 <p>Packages available:</p>
 <ul>
