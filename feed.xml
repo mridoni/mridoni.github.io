@@ -3,12 +3,35 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-01-16T11:42:19+01:00</updated>
+    <updated>2022-01-18T12:48:20+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>llxvm: from C to Java/.Net</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/llxvm-from-c-to-javanet.html"/>
+        <id>https://mridoni.github.io/llxvm-from-c-to-javanet.html</id>
+
+        <updated>2022-01-18T12:48:20+01:00</updated>
+            <summary>
+                <![CDATA[
+                    I just published the first public release of llxvm, a tool that allows to compile C source files to JVM bytecode (.class) or CIL/.Net (.exe/dll) and run traditional applications written in C to run in a pure-Java environment (with some caveats). llxvm is based on lljvm by David a. Roberts, a project that unfortunately has been dormant for several years and relies on a now archaic version of LLVM/clang (2.7). I made several changes to adapt it&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p dir="auto">I just published the first public release of llxvm, a tool that allows to compile C source files to JVM bytecode (.class) or CIL/.Net (.exe/dll) and run traditional applications written in C to run in a pure-Java environment (with some caveats).</p>
+<p dir="auto">llxvm is based on <a href="https://github.com/davidar/lljvm">lljvm</a> by David a. Roberts, a project that unfortunately has been dormant for several years and relies on a now archaic version of LLVM/clang (2.7). I made several changes to adapt it to a more modern version of LLVM/clang (10+), removed some unnecessary tools, rewrote and expanded the linker and added other tools. Moreover, I refactored the backend's code to be able to emit CIL/.Net assembly beside JVM bytecode).</p>
+<p dir="auto">Currently <code>llxvm</code> is able to build and run several programs and libraries: as an example libgmp, vbisam and GnuCOBOL's libcob library have been successfully compiled and run, though with some caveats (see "<a href="https://github.com/mridoni/llxvm/blob/main/notes_code_size">Notes about code size</a>" below).</p>
+<p dir="auto">For more information, code and binaries, visit the <a href="https://github.com/mridoni/llxvm" target="_blank" rel="noopener noreferrer">GitHub repository for llxvm</a>.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Gix-IDE v1.0.7 is out</title>
         <author>
