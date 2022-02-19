@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://mridoni.github.io/gix-ide-and-gixsql-108-are-coming.html",
+            "url": "https://mridoni.github.io/gix-ide-and-gixsql-108-are-coming.html",
+            "title": "Gix-IDE and GixSQL 1.0.8 are coming",
+            "summary": "The new versions of Gix-IDE and GixSQL are almost here, and the release is planned for the end of February, first days of March at most. This release fixes an important bug in the Linux debugger in Gix-IDE, but for the most part is heavily focused on improvements to GixSQL (thanks to Simon Sobisch for pointing out things that could - and in many cases needed - to be improved). Among the improvements: As said&hellip;",
+            "content_html": "<p>The new versions of Gix-IDE and GixSQL are almost here, and the release is planned for the end of February, first days of March at most. This release fixes an important bug in the Linux debugger in Gix-IDE, but for the most part is heavily focused on improvements to GixSQL (thanks to Simon Sobisch for pointing out things that could - and in many cases needed - to be improved). Among the improvements:</p>\n<ul>\n<li>New (and way neater) format for the connection string, with the possibility of passing options to the backend \"drivers\"</li>\n<li>Multiple connections are now supported (CONNECT...AS, EXEC SQL AT...)</li>\n<li>VARCHAR/VARBINARY fields are now directly supported in the COBOL source, without the need to manually define \"level-49\" fields. Both EXEC SQL VAR... and \"SQL TYPE IS\" declarations are supported</li>\n<li>Improved error handling and general robustness both in the preprocessor and in the runtime library</li>\n<li>Improved memory allocation</li>\n<li>A source package (.tar.gz) will be made available, to be compiled on Linux with autoconf/automake, without having to download the full-blown IDE</li>\n</ul>\n<p>As said above, it's almost done, I just need to f<span style=\"color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);\">inish testing, r</span><span style=\"color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);\">evise the packaging scripts and a</span><span style=\"color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);\">dd/edit the documentation.</span></p>",
+            "author": {
+                "name": "Marco Ridoni"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-02-19T09:57:27+01:00",
+            "date_modified": "2022-02-19T09:57:27+01:00"
+        },
+        {
             "id": "https://mridoni.github.io/llxvm-from-c-to-javanet.html",
             "url": "https://mridoni.github.io/llxvm-from-c-to-javanet.html",
             "title": "llxvm: from C to Java/.Net",

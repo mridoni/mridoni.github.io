@@ -3,12 +3,41 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-01-18T12:48:20+01:00</updated>
+    <updated>2022-02-19T09:57:27+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>Gix-IDE and GixSQL 1.0.8 are coming</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gix-ide-and-gixsql-108-are-coming.html"/>
+        <id>https://mridoni.github.io/gix-ide-and-gixsql-108-are-coming.html</id>
+
+        <updated>2022-02-19T09:57:27+01:00</updated>
+            <summary>
+                <![CDATA[
+                    The new versions of Gix-IDE and GixSQL are almost here, and the release is planned for the end of February, first days of March at most. This release fixes an important bug in the Linux debugger in Gix-IDE, but for the most part is heavily focused on improvements to GixSQL (thanks to Simon Sobisch for pointing out things that could - and in many cases needed - to be improved). Among the improvements: As said&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>The new versions of Gix-IDE and GixSQL are almost here, and the release is planned for the end of February, first days of March at most. This release fixes an important bug in the Linux debugger in Gix-IDE, but for the most part is heavily focused on improvements to GixSQL (thanks to Simon Sobisch for pointing out things that could - and in many cases needed - to be improved). Among the improvements:</p>
+<ul>
+<li>New (and way neater) format for the connection string, with the possibility of passing options to the backend "drivers"</li>
+<li>Multiple connections are now supported (CONNECT...AS, EXEC SQL AT...)</li>
+<li>VARCHAR/VARBINARY fields are now directly supported in the COBOL source, without the need to manually define "level-49" fields. Both EXEC SQL VAR... and "SQL TYPE IS" declarations are supported</li>
+<li>Improved error handling and general robustness both in the preprocessor and in the runtime library</li>
+<li>Improved memory allocation</li>
+<li>A source package (.tar.gz) will be made available, to be compiled on Linux with autoconf/automake, without having to download the full-blown IDE</li>
+</ul>
+<p>As said above, it's almost done, I just need to f<span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">inish testing, r</span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">evise the packaging scripts and a</span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">dd/edit the documentation.</span></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>llxvm: from C to Java/.Net</title>
         <author>
