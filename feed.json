@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://mridoni.github.io/gix-ide-v109.html",
+            "url": "https://mridoni.github.io/gix-ide-v109.html",
+            "title": "Gix-IDE v1.0.9",
+            "summary": "Gix-IDE (and GixSQL) v1.0.9 have just been published on GitHub. This release fixes a bug in the Linux debugger (see issue #49) and adds a new \"screen resolution\" setting in the \"Settings\" dialog (should help with issue #32). As usual, binary and source packages are available in the Releases section on GitHub. ",
+            "content_html": "<p>Gix-IDE (and GixSQL) v1.0.9 have just been published on GitHub. This release fixes a bug in the Linux debugger (see issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1147163815\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mridoni/gix/issues/49\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mridoni/gix/issues/49/hovercard\" href=\"https://github.com/mridoni/gix/issues/49\">#49</a>) and adds a new \"screen resolution\" setting in the \"Settings\" dialog (should help with issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1049286768\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mridoni/gix/issues/32\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mridoni/gix/issues/32/hovercard\" href=\"https://github.com/mridoni/gix/issues/32\">#32</a>).</p>\n<p>As usual, binary and source packages are <a href=\"https://github.com/mridoni/gix/releases/tag/v1.0.9\" target=\"_blank\" rel=\"noopener noreferrer\">available in the Releases section</a> on GitHub.</p>\n<p> </p>",
+            "author": {
+                "name": "Marco Ridoni"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-02-25T14:29:28+01:00",
+            "date_modified": "2022-02-25T14:29:28+01:00"
+        },
+        {
             "id": "https://mridoni.github.io/gix-ide-and-gixsql-v108-are-out.html",
             "url": "https://mridoni.github.io/gix-ide-and-gixsql-v108-are-out.html",
             "title": "Gix-IDE and GixSQL v1.0.8 are out",
