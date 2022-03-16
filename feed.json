@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://mridoni.github.io/gix-ide-and-gixsql-v1010-are-available.html",
+            "url": "https://mridoni.github.io/gix-ide-and-gixsql-v1010-are-available.html",
+            "title": "Gix-IDE and GixSQL v1.0.10 are available",
+            "summary": "The new versions of Gix-IDE and GixSQL have just been published on GitHub. This release includes the following changes: Binary and source packages are available as usual on the Releases page on GitHub: https://github.com/mridoni/gix/releases/tag/v1.0.10 Another release (v1.0.11) will probably follow in a couple of weeks (more or less) with some improvements (e.g. feature parity for all database drivers) and post-1.0.10 fixes. In the meantime the work on the future release 1.1.x, that will incorporate a standalone and&hellip;",
+            "content_html": "<p>The new versions of Gix-IDE and GixSQL have just been published on GitHub. This release includes the following changes:</p>\n<ul>\n<li>Gix-IDE: added \"Save before building\" option in settings</li>\n<li>GixSQL: extended the ESQL VAR statement (added FLOAT, DECIMAL, etc.)</li>\n<li>GixSQL: added support for prepared statements</li>\n<li>GixSQL: added support for EXECUTE IMMEDIATE</li>\n<li>GixSQL: fixed handling of BEGIN/END DECLARE SECTION</li>\n<li>GixSQL: fixed autoconf package</li>\n<li>GixSQL: fixed command line options in gixpp</li>\n<li>GixSQL: fixed display of error messages in gixpp/libgixpp</li>\n<li>GixSQL: added ocesql-style wrapper for gixpp</li>\n</ul>\n<p>Binary and source packages are available as usual on the Releases page on GitHub:<br><a href=\"https://github.com/mridoni/gix/releases/tag/v1.0.10\">https://github.com/mridoni/gix/releases/tag/v1.0.10</a></p>\n<p>Another release (v1.0.11) will probably follow in a couple of weeks (more or less) with some improvements (e.g. feature parity for all database drivers) and<span style=\"font-size: 18.4px; color: var(--text-editor-body-color); font-family: var(--font-base); font-weight: var(--font-weight-normal);\"> </span><span style=\"font-size: 18.4px; color: var(--text-editor-body-color); font-family: var(--font-base); font-weight: var(--font-weight-normal);\">post-1.0.10</span><span style=\"color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);\"> fixes.</span></p>\n<p>In the meantime the work on the future release 1.1.x, that will incorporate a standalone and remote debugger, is progressing nicely.</p>",
+            "author": {
+                "name": "Marco Ridoni"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-03-16T12:59:51+01:00",
+            "date_modified": "2022-03-16T15:43:32+01:00"
+        },
+        {
             "id": "https://mridoni.github.io/gix-ide-v109.html",
             "url": "https://mridoni.github.io/gix-ide-v109.html",
             "title": "Gix-IDE v1.0.9",

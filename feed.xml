@@ -3,12 +3,46 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-02-25T14:33:46+01:00</updated>
+    <updated>2022-03-16T15:43:32+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>Gix-IDE and GixSQL v1.0.10 are available</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gix-ide-and-gixsql-v1010-are-available.html"/>
+        <id>https://mridoni.github.io/gix-ide-and-gixsql-v1010-are-available.html</id>
+
+        <updated>2022-03-16T15:43:32+01:00</updated>
+            <summary>
+                <![CDATA[
+                    The new versions of Gix-IDE and GixSQL have just been published on GitHub. This release includes the following changes: Binary and source packages are available as usual on the Releases page on GitHub: https://github.com/mridoni/gix/releases/tag/v1.0.10 Another release (v1.0.11) will probably follow in a couple of weeks (more or less) with some improvements (e.g. feature parity for all database drivers) and post-1.0.10 fixes. In the meantime the work on the future release 1.1.x, that will incorporate a standalone and&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>The new versions of Gix-IDE and GixSQL have just been published on GitHub. This release includes the following changes:</p>
+<ul>
+<li>Gix-IDE: added "Save before building" option in settings</li>
+<li>GixSQL: extended the ESQL VAR statement (added FLOAT, DECIMAL, etc.)</li>
+<li>GixSQL: added support for prepared statements</li>
+<li>GixSQL: added support for EXECUTE IMMEDIATE</li>
+<li>GixSQL: fixed handling of BEGIN/END DECLARE SECTION</li>
+<li>GixSQL: fixed autoconf package</li>
+<li>GixSQL: fixed command line options in gixpp</li>
+<li>GixSQL: fixed display of error messages in gixpp/libgixpp</li>
+<li>GixSQL: added ocesql-style wrapper for gixpp</li>
+</ul>
+<p>Binary and source packages are available as usual on the Releases page on GitHub:<br><a href="https://github.com/mridoni/gix/releases/tag/v1.0.10">https://github.com/mridoni/gix/releases/tag/v1.0.10</a></p>
+<p>Another release (v1.0.11) will probably follow in a couple of weeks (more or less) with some improvements (e.g. feature parity for all database drivers) and<span style="font-size: 18.4px; color: var(--text-editor-body-color); font-family: var(--font-base); font-weight: var(--font-weight-normal);"> </span><span style="font-size: 18.4px; color: var(--text-editor-body-color); font-family: var(--font-base); font-weight: var(--font-weight-normal);">post-1.0.10</span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"> fixes.</span></p>
+<p>In the meantime the work on the future release 1.1.x, that will incorporate a standalone and remote debugger, is progressing nicely.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Gix-IDE v1.0.9</title>
         <author>
