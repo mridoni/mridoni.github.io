@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://mridoni.github.io/gix-ide-and-gixsql-1011-available-now.html",
+            "url": "https://mridoni.github.io/gix-ide-and-gixsql-1011-available-now.html",
+            "title": "Gix-IDE and GixSQL 1.0.11 available now",
+            "summary": "The new versions of Gix-IDE and GixSQL have just been published. This is a maintenance release for GixSQL, that fixes a few bugs and introduces some improvements: Binary and source packages are available as usual on the Releases page on GitHub: https://github.com/mridoni/gix/releases/tag/v1.0.11 Another release (v1.0.12) will probably follow in a few weeks with more improvements for GixSQL. In the meantime the work on the future release 1.1.x, that will incorporate a standalone and remote debugger,&hellip;",
+            "content_html": "<p>The new versions of Gix-IDE and GixSQL have just been published. This is a maintenance release for GixSQL, that fixes a few bugs and introduces some improvements:</p>\n<ul>\n<li>Implemented \"EXEC SQL IGNORE\" (<a href=\"https://github.com/mridoni/gix/issues/73\">GitHub issue #73</a>)</li>\n<li>Fixed \"DISCONNECT is broken\" (<a href=\"https://github.com/mridoni/gix/issues/78\">#78</a>)</li>\n<li>Fixed a \"ROLLBACK TO SAVEPOINT\" issue</li>\n<li>Fixed connection string parameter issue (see <a href=\"https://github.com/mridoni/gix/issues/39\">#39</a>)</li>\n<li>Improvements to \"passthru\" SQL statements (see <a href=\"https://github.com/mridoni/gix/issues/68\">#68</a>)</li>\n<li>Fixed a \"ROLLBACK TO SAVEPOINT\" regression (triggered by <a href=\"https://github.com/mridoni/gix/issues/67\">#67</a>)</li>\n<li>Fixed \"scanner checks for FD (including in literals)\" (GitHub issue <a href=\"https://github.com/mridoni/gix/issues/65\">#65</a>)</li>\n<li>Fixed \"unexpected SELECTFROM - statements with sub-selects cannot be parsed (GitHub issue <a href=\"https://github.com/mridoni/gix/issues/66\">#66</a>)</li>\n<li>Fixed \"CONNECT...IDENTIFIED BY\" (GitHub issue <a href=\"https://github.com/mridoni/gix/issues/43\">#43</a>)<br><br></li>\n</ul>\n<p>Binary and source packages are available as usual on the Releases page on GitHub:<br><a href=\"#INTERNAL_LINK#/tag/NaN\">https://github.com/mridoni/gix/releases/tag/v1.0.11</a></p>\n<p>Another release (v1.0.12) will probably follow in a few weeks with more improvements for GixSQL.</p>\n<p>In the meantime the work on the future release 1.1.x, that will incorporate a standalone and remote debugger, is progressing nicely.</p>",
+            "author": {
+                "name": "Marco Ridoni"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-03-22T11:14:09+01:00",
+            "date_modified": "2022-03-22T11:14:20+01:00"
+        },
+        {
             "id": "https://mridoni.github.io/gix-ide-and-gixsql-v1010-are-available.html",
             "url": "https://mridoni.github.io/gix-ide-and-gixsql-v1010-are-available.html",
             "title": "Gix-IDE and GixSQL v1.0.10 are available",
