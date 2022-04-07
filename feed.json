@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://mridoni.github.io/gixsql-and-gix-ide-v1012-are-available.html",
+            "url": "https://mridoni.github.io/gixsql-and-gix-ide-v1012-are-available.html",
+            "title": "GixSQL and Gix-IDE v1.0.12 are available",
+            "summary": "The new versions of Gix-IDE and GixSQL have just been published. This is a maintenance release, that fixes a few bugs and introduces some improvements: Gix-IDE: fixed additional compiler/linker parameters in project properties Gix-IDE: fixed working directory for running/debugged project (Linux) GixSQL: Fixed \"More formats for connect\" (#43) GixSQL: Fixed \"length/power issues with COMP-3 (#92)\" (and zoned TC/LS) GixSQL: Fixed \"pass postgres cast operator as token\" (#93) GixSQL: Fixed \"Long queries break COBOL compiler\" (#89)&hellip;",
+            "content_html": "<p>The new versions of Gix-IDE and GixSQL have just been published. This is a maintenance release, that fixes a few bugs and introduces some improvements:</p>\n<ul>\n<li>Gix-IDE: fixed additional compiler/linker parameters in project properties</li>\n<li>Gix-IDE: fixed working directory for running/debugged project (Linux)</li>\n<li>GixSQL: Fixed \"More formats for connect\" (#43)</li>\n<li>GixSQL: Fixed \"length/power issues with COMP-3 (#92)\" (and zoned TC/LS)</li>\n<li>GixSQL: Fixed \"pass postgres cast operator as token\" (#93)</li>\n<li>GixSQL: Fixed \"Long queries break COBOL compiler\" (#89)</li>\n<li>GixSQL: Fixed (partially) \"GixSQL 1.0.9 compiler warnings\" (#53)</li>\n<li>GixSQL: Fixed a couple of regressions for \"support EXEC SQL VAR\" (#47)<br>GixSQL: Fixed \"add OCCURS UNBOUNDED (#80)</li>\n<li>GixSQL: Fixed several parser problems<br>GixSQL: Fixed error reporting bugs (wrong/invalid location of the error)</li>\n<li>GixSQL: Fixed \"prevent excessive filename conversions to absolute path\" (merged PR45)</li>\n<li>GixSQL: Fixed \"DbInterfacePGSQL::get_resultset_value C string handling\" (merged PR85)</li>\n<li>GixSQL: Fixed \"DbInterfacePGSQL cstring -&gt; std::string\" (merged PR86)</li>\n<li>GixSQL: Fixed a problem with cursors in \"add support for multiple connections\" (#44)</li>\n<li>GixSQL: Fixed \"outputs too many periods - breaks code flow\" (#82)</li>\n<li>GixSQL: Fixed allocation of \"realdata\" buffer\"<br><br><br>Binary and source packages are available as usual on the Releases page on GitHub:<br><a href=\"https://github.com/mridoni/gix/releases/tag/v1.0.12\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/mridoni/gix/releases/tag/v1.0.12</a><br><br>Starting from the next version (v1.0.13, presumably) the repository will be split in two, with separate repositories for Gix-IDE and GixSQL. This is necessary to allow for a faster release cycle for both components.<br><br>In the meantime the work on the future release 1.1.x, that will incorporate a standalone and remote debugger, is progressing nicely.</li>\n</ul>",
+            "author": {
+                "name": "Marco Ridoni"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-04-07T16:07:57+02:00",
+            "date_modified": "2022-04-07T16:07:57+02:00"
+        },
+        {
             "id": "https://mridoni.github.io/gix-ide-and-gixsql-1011-available-now.html",
             "url": "https://mridoni.github.io/gix-ide-and-gixsql-1011-available-now.html",
             "title": "Gix-IDE and GixSQL 1.0.11 available now",
@@ -21,7 +35,7 @@
             "tags": [
             ],
             "date_published": "2022-03-22T11:14:09+01:00",
-            "date_modified": "2022-03-22T11:14:20+01:00"
+            "date_modified": "2022-04-07T16:04:52+02:00"
         },
         {
             "id": "https://mridoni.github.io/gix-ide-and-gixsql-v1010-are-available.html",
@@ -134,20 +148,6 @@
             ],
             "date_published": "2021-12-30T14:51:39+01:00",
             "date_modified": "2021-12-30T16:43:29+01:00"
-        },
-        {
-            "id": "https://mridoni.github.io/gix-ide-107-is-coming.html",
-            "url": "https://mridoni.github.io/gix-ide-107-is-coming.html",
-            "title": "Gix-IDE 1.0.7 is coming",
-            "summary": "Gix-IDE 1.0.7 is coming The new version of Gix-IDE will be published around mid-January. It will ship with several fixes in the ESQL preprocessor, both the version integrated in Gix-IDE and the standalone one. Separate install packages for GixSQL will also be available (for Windows and Linux, as usual) and it will be possibile to build GixSQL only instead of the whole IDE. This version will also integrate assorted fixes for issues like debugging on&hellip;",
-            "content_html": "<h3>Gix-IDE 1.0.7 is coming</h3>\n<p>The new version of Gix-IDE will be published around mid-January. It will ship with several fixes in the ESQL preprocessor, both the version integrated in Gix-IDE and the standalone one.</p>\n<p>Separate install packages for GixSQL will also be available (for Windows and Linux, as usual) and it will be possibile to build GixSQL only instead of the whole IDE.</p>\n<p>This version will also integrate assorted fixes for issues like debugging on Windows/x86 and startup errors.</p>\n<p>Check this page, GnuCOBOL's contribution <a href=\"https://sourceforge.net/p/gnucobol/discussion/contrib/\" target=\"_blank\" rel=\"noopener noreferrer\">GnuCOBOL - Contributions</a> or GitHub's <a href=\"https://github.com/mridoni/gix/releases\" target=\"_blank\" rel=\"noopener noreferrer\">Gix-IDE Releases </a>page for an update</p>",
-            "author": {
-                "name": "Marco Ridoni"
-            },
-            "tags": [
-            ],
-            "date_published": "2021-12-30T14:24:53+01:00",
-            "date_modified": "2021-12-30T16:40:57+01:00"
         }
     ]
 }
