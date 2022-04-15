@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://mridoni.github.io/gix-ide-and-gixsql-1013-are-available.html",
+            "url": "https://mridoni.github.io/gix-ide-and-gixsql-1013-are-available.html",
+            "title": "Gix-IDE and GixSQL 1.0.13 are available",
+            "summary": "Starting from the this version the repository has been split in two, with separate repositories for Gix-IDE and GixSQL. This is necessary to allow for a faster release cycle for both components. Gix-IDE still incorporates its own copy of GixSQL (automatically aligned with the main repository). This is a maintenance releases, following the source tree reorganization. There are no fixes or new features. You will find the binary packages, as usual on the Releases page&hellip;",
+            "content_html": "<p>Starting from the this version the repository has been split in two, with separate repositories for <a href=\"https://github.com/mridoni/gix\" target=\"_blank\" rel=\"noopener noreferrer\">Gix-IDE</a> and <a href=\"https://github.com/mridoni/gixsql\">GixSQL</a>. This is necessary to allow for a faster release cycle for both components. Gix-IDE still incorporates its own copy of GixSQL (automatically aligned with the main repository).<br><br>This is a maintenance releases, following the source tree reorganization. There are no fixes or new features.<br><br>You will find the binary packages, as usual on the Releases page of each repository.</p>",
+            "author": {
+                "name": "Marco Ridoni"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-04-15T10:21:41+02:00",
+            "date_modified": "2022-04-15T10:21:41+02:00"
+        },
+        {
             "id": "https://mridoni.github.io/gixsql-and-gix-ide-v1012-are-available.html",
             "url": "https://mridoni.github.io/gixsql-and-gix-ide-v1012-are-available.html",
             "title": "GixSQL and Gix-IDE v1.0.12 are available",
@@ -134,20 +148,6 @@
             ],
             "date_published": "2022-01-11T17:17:19+01:00",
             "date_modified": "2022-01-11T17:39:06+01:00"
-        },
-        {
-            "id": "https://mridoni.github.io/gix-ide-and-more-next-steps.html",
-            "url": "https://mridoni.github.io/gix-ide-and-more-next-steps.html",
-            "title": "Gix-IDE (and more): next steps",
-            "summary": "Gix-IDE (and more): next steps I decided to start these pages (well, there's only one at the moment, but you never know) to provide some feedback on what I am working on in Gix-IDE and in other software projects (some related, others not) that I will be releasing in a few weeks. I deemed this necessary (or at least useful) because Gix-IDE is currently updated once in a while, basically when I think a release&hellip;",
-            "content_html": "<h3><strong>Gix-IDE (and more): next steps</strong></h3>\n<p>I decided to start these pages (well, there's only one at the moment, but you never know) to provide some feedback on what I am working on in Gix-IDE and in other software projects (some related, others not) that I will be releasing in a few weeks.</p>\n<p>I deemed this necessary (or at least useful) because Gix-IDE is currently updated once in a while, basically when I think a release is ready, or due, and I wanted to fill the gap between one release and the other, and let people know that, well, I am still working on it or that, when duty (my day-job) calls, you'll have to be patient.</p>\n<p>The next release (1.0.7) is almost ready, as you can read in <a href=\"https://mridoni.github.io/gix-ide-107-is-coming.html\" target=\"_blank\" rel=\"noopener noreferrer\">another post</a>. After that I will restart the work I began a couple of months ago and that involves a complete refactoring of the debugger. The debugger will be a separate module (actually two, at least on Windows, for x64 and x86) and the IDE will communicate with it through a well-defined protocol, that I intend to document (time-constraints permitting, of course). This will have important consequences:</p>\n<ol>\n<li>On Windows (and possibly on Linux) it will be possible to debug programs for a different (but obviously supported) architecture: in practice this means that on x64 Windows you will be able to debug both x64 and x86 programs from either version of the IDE, while at the moment you can only debug programs compiled for your host architecture (actually the architecture Gix-IDE was compiled for).</li>\n<li>It will be possible to have remote debugging and it will be easier to implement an \"attach and debug\" feature</li>\n<li>It will be possible to use the debugger to develop your own debugging client</li>\n</ol>\n<p>I am not promising that all these features will be present in the first major release (it will probably be named 1.1.x) but this is definitely the road ahead.</p>",
-            "author": {
-                "name": "Marco Ridoni"
-            },
-            "tags": [
-            ],
-            "date_published": "2021-12-30T14:51:39+01:00",
-            "date_modified": "2021-12-30T16:43:29+01:00"
         }
     ]
 }
