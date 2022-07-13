@@ -3,12 +3,49 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-06-23T14:19:29+02:00</updated>
+    <updated>2022-07-13T18:00:59+02:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>GixSQL v1.0.17 is out</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gixsql-v1017-is-out.html"/>
+        <id>https://mridoni.github.io/gixsql-v1017-is-out.html</id>
+
+        <updated>2022-07-13T18:00:59+02:00</updated>
+            <summary>
+                <![CDATA[
+                    This is a maintenance release for GixSQL, that fixes a few issues and adds some new features. A summary of new features and fixes: Binary and sources are available on the project page on GitHub or directly on the Releases page.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>This is a maintenance release for GixSQL, that fixes a few issues and adds some new features.</p>
+<p>A summary of new features and fixes:</p>
+<ul>
+<li>Added support for "smart" cursor initialization (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1295941001" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/88" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/88/hovercard" href="https://github.com/mridoni/gixsql/issues/88">#88</a>)</li>
+<li>Added support for EXECUTE prepared-statement INTO #(87)</li>
+<li>Fixed a logging problem (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1295212273" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/84" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/84/hovercard" href="https://github.com/mridoni/gixsql/issues/84">#84</a>)</li>
+<li>Fixed "wrong generated COBOL in 1.0.16" (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1294757823" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/83" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/83/hovercard" href="https://github.com/mridoni/gixsql/issues/83">#83</a>)</li>
+<li>Fixed "missing "close" for spdlog?" (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1294462054" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/82" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/82/hovercard" href="https://github.com/mridoni/gixsql/issues/82">#82</a>)</li>
+<li>Added support for using prepared statements in cursors (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1294193036" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/81" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/81/hovercard" href="https://github.com/mridoni/gixsql/issues/81">#81</a>)</li>
+<li>Variable length fields indicators are now 32-bit long by default (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1294063305" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/80" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/80/hovercard" href="https://github.com/mridoni/gixsql/issues/80">#80</a>)</li>
+<li>Added support for using variable length fields with prepared statements (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1289253715" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/79" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/79/hovercard" href="https://github.com/mridoni/gixsql/issues/79">#79</a>)</li>
+<li>Added upport for using group fields in INSERT and SELECT..INTO statements (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1205384188" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/6" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/6/hovercard" href="https://github.com/mridoni/gixsql/issues/6">#6</a>)</li>
+<li>Added support for more connection string formats (including ocesql compatibility) (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1205386278" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/16" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/16/hovercard" href="https://github.com/mridoni/gixsql/issues/16">#16</a>)</li>
+<li>Added Support for DISCONNECT ALL (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1299713226" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/89" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/89/hovercard" href="https://github.com/mridoni/gixsql/issues/89">#89</a>)</li>
+<li>Performed some refactoring to improve code size</li>
+<li>Fixed a few memory leaks</li>
+</ul>
+<p>Binary and sources are available on the <a href="https://github.com/mridoni/gixsql" target="_blank" rel="noopener noreferrer">project page on GitHub</a> or directly on the <a href="https://github.com/mridoni/gixsql/releases/tag/v1.0.17" target="_blank" rel="noopener noreferrer">Releases page</a>.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>GixSQL 1.0.16 is coming</title>
         <author>
@@ -298,29 +335,6 @@
 <li>A source package (.tar.gz) will be made available, to be compiled on Linux with autoconf/automake, without having to download the full-blown IDE</li>
 </ul>
 <p>As said above, it's almost done, I just need to f<span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">inish testing, r</span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">evise the packaging scripts and a</span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">dd/edit the documentation.</span></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>llxvm: from C to Java/.Net</title>
-        <author>
-            <name>Marco Ridoni</name>
-        </author>
-        <link href="https://mridoni.github.io/llxvm-from-c-to-javanet.html"/>
-        <id>https://mridoni.github.io/llxvm-from-c-to-javanet.html</id>
-
-        <updated>2022-01-18T12:48:20+01:00</updated>
-            <summary>
-                <![CDATA[
-                    I just published the first public release of llxvm, a tool that allows to compile C source files to JVM bytecode (.class) or CIL/.Net (.exe/dll) and run traditional applications written in C to run in a pure-Java environment (with some caveats). llxvm is based on lljvm by David a. Roberts, a project that unfortunately has been dormant for several years and relies on a now archaic version of LLVM/clang (2.7). I made several changes to adapt it&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p dir="auto">I just published the first public release of llxvm, a tool that allows to compile C source files to JVM bytecode (.class) or CIL/.Net (.exe/dll) and run traditional applications written in C to run in a pure-Java environment (with some caveats).</p>
-<p dir="auto">llxvm is based on <a href="https://github.com/davidar/lljvm">lljvm</a> by David a. Roberts, a project that unfortunately has been dormant for several years and relies on a now archaic version of LLVM/clang (2.7). I made several changes to adapt it to a more modern version of LLVM/clang (10+), removed some unnecessary tools, rewrote and expanded the linker and added other tools. Moreover, I refactored the backend's code to be able to emit CIL/.Net assembly beside JVM bytecode).</p>
-<p dir="auto">Currently <code>llxvm</code> is able to build and run several programs and libraries: as an example libgmp, vbisam and GnuCOBOL's libcob library have been successfully compiled and run, though with some caveats (see "<a href="https://github.com/mridoni/llxvm/blob/main/notes_code_size">Notes about code size</a>" below).</p>
-<p dir="auto">For more information, code and binaries, visit the <a href="https://github.com/mridoni/llxvm" target="_blank" rel="noopener noreferrer">GitHub repository for llxvm</a>.</p>
             ]]>
         </content>
     </entry>
