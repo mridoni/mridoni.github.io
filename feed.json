@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://mridoni.github.io/gix-ide-v1017-is-out.html",
+            "url": "https://mridoni.github.io/gix-ide-v1017-is-out.html",
+            "title": "Gix-IDE v1.0.17 is out",
+            "summary": "This is basically a \"refresh\" release that incorporates all the latest developments in GixSQL. There are no changes to the IDE or the debugger. There is no v1.0.16 release for Gix-IDE. Binary packages available: A summary of new features and fixes (issue numbers correspond to issues in the GixSQL repository): As usual, binary and source packages are available on the Release page on GitHub.",
+            "content_html": "<p>This is basically a \"refresh\" release that incorporates all the latest developments in GixSQL. There are no changes to the IDE or the debugger. There is no v1.0.16 release for Gix-IDE.</p>\n<p>Binary packages available:</p>\n<ul>\n<li>Windows x86</li>\n<li>Windows x64</li>\n<li>Linux x64 (Ubuntu 20.04)</li>\n</ul>\n<p>A summary of new features and fixes (issue numbers correspond to issues in the <a href=\"https://github.com/mridoni/gixsql\">GixSQL repository</a>):</p>\n<ul>\n<li>GixSQL: Added support for \"smart\" cursor initialization (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1182174485\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mridoni/gix/issues/88\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mridoni/gix/issues/88/hovercard\" href=\"https://github.com/mridoni/gix/issues/88\">#88</a>)</li>\n<li>GixSQL: Added support for EXECUTE prepared-statement INTO #(87)</li>\n<li>GixSQL: Fixed a logging problem (#84)</li>\n<li>GixSQL: Fixed \"wrong generated COBOL in 1.0.16\" (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1179221314\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mridoni/gix/issues/83\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mridoni/gix/pull/83/hovercard\" href=\"https://github.com/mridoni/gix/pull/83\">#83</a>)</li>\n<li>GixSQL: Fixed \"missing \"close\" for spdlog?\" (#82)</li>\n<li>GixSQL: Added support for using prepared statements in cursors (#81)</li>\n<li>GixSQL: Variable length fields indicators are now 32-bit long by default (#80)</li>\n<li>GixSQL: Added support for using variable length fields with prepared statements (#79)</li>\n<li>GixSQL: Added upport for using group fields in INSERT and SELECT..INTO statements (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"823732081\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mridoni/gix/issues/6\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mridoni/gix/issues/6/hovercard\" href=\"https://github.com/mridoni/gix/issues/6\">#6</a>)</li>\n<li>GixSQL: Added support for more connection string formats (including ocesql compatibility) (#16)</li>\n<li>GixSQL: Added Support for DISCONNECT ALL (#89)</li>\n<li>GixSQL: Performed some refactoring to improve code size</li>\n<li>GixSQL: Fixed a few memory leaks</li>\n</ul>\n<p>As usual, binary and source packages are available on the <a href=\"https://github.com/mridoni/gix/releases/tag/v1.0.17\" target=\"_blank\" rel=\"noopener noreferrer\">Release page</a> on GitHub.</p>",
+            "author": {
+                "name": "Marco Ridoni"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-07-21T16:15:46+02:00",
+            "date_modified": "2022-07-21T16:15:46+02:00"
+        },
+        {
             "id": "https://mridoni.github.io/gix-ide-v1017-is-coming.html",
             "url": "https://mridoni.github.io/gix-ide-v1017-is-coming.html",
             "title": "Gix-IDE v1.0.17 is coming",
@@ -134,20 +148,6 @@
             ],
             "date_published": "2022-02-25T14:29:28+01:00",
             "date_modified": "2022-02-25T14:29:28+01:00"
-        },
-        {
-            "id": "https://mridoni.github.io/gix-ide-and-gixsql-v108-are-out.html",
-            "url": "https://mridoni.github.io/gix-ide-and-gixsql-v108-are-out.html",
-            "title": "Gix-IDE and GixSQL v1.0.8 are out",
-            "summary": "Gix-IDE and GixSQL v1.0.8 have been published on GitHub. This release introduces new features for GixSQL and fixes a bug in the Linux debugger. All the packages are signed with my GPG private key. The corresponding public key (m.ridoni@gmail.com, fingerprint 70E4 08CF B89B 5FA8 32E4 5292 EFDC 94BD 5260 B939) has been published on pgp.mit.edu and keyserver.ubuntu.com and is available at https://github.com/mridoni.gpg Binary packages available: Beside the standard source packages, there is also a standard Linux&hellip;",
-            "content_html": "<p>Gix-IDE and GixSQL v1.0.8 have been published on GitHub.</p>\n<p>This release introduces new features for GixSQL and fixes a bug in the Linux debugger.</p>\n<p>All the packages are signed with my GPG private key. The corresponding public key (m.ridoni@gmail.com, fingerprint 70E4 08CF B89B 5FA8 32E4 5292 EFDC 94BD 5260 B939) has been published on pgp.mit.edu and keyserver.ubuntu.com and is available at <a href=\"https://github.com/mridoni.gpg\" rel=\"nofollow\">https://github.com/mridoni.gpg</a></p>\n<p>Binary packages available:</p>\n<ul>\n<li>Windows x86</li>\n<li>Windows x64</li>\n<li>Linux x64 (Ubuntu 20.04)</li>\n</ul>\n<p><br>Beside the standard source packages, there is also a standard Linux source tarball for GixSQL, that can be used with configure and make.</p>\n<p>A summary of new features and fixes:</p>\n<ul>\n<li>Gix-IDE: fixed a debugger issue on Linux</li>\n<li>GixSQL: changed the connection string format</li>\n<li>GixSQL: added support for multiple connections</li>\n<li>GixSQL: added support for explicit declaration of variable length fields</li>\n<li>GixSQL: added support for driver options</li>\n<li>GixSQL: fixed bugs and improved error handling in the runtime libraries</li>\n<li>GixSQL: fixed bugs and improved error handling in the preprocessor</li>\n<li>GixSQL: added a Linux/autoconf build package</li>\n</ul>\n<p>Binary and source packages are available on GitHub as usual:<br><a href=\"https://github.com/mridoni/gix/releases/tag/v1.0.8\" rel=\"nofollow\">https://github.com/mridoni/gix/releases/tag/v1.0.8</a></p>",
-            "author": {
-                "name": "Marco Ridoni"
-            },
-            "tags": [
-            ],
-            "date_published": "2022-02-22T16:20:54+01:00",
-            "date_modified": "2022-02-25T14:33:46+01:00"
         }
     ]
 }
