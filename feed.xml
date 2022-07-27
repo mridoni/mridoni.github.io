@@ -3,12 +3,45 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-07-21T16:15:46+02:00</updated>
+    <updated>2022-07-27T15:28:00+02:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>GixSQL v1.0.18dev1 is out</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gixsql-v1018dev1-is-out.html"/>
+        <id>https://mridoni.github.io/gixsql-v1018dev1-is-out.html</id>
+
+        <updated>2022-07-27T15:28:00+02:00</updated>
+            <summary>
+                <![CDATA[
+                    This is a maintenance pre-release for GixSQL, that fixes a couple of more urgent issues. Only an "autoconf-enabled" package is part of the release. Fixes: Notes: An autoconf-enabled source package is available on the (pre)release page at GitHub
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>This is a maintenance <strong>pre-release</strong> for GixSQL, that fixes a couple of more urgent issues. Only an "autoconf-enabled" package is part of the release.</p>
+<p>Fixes:</p>
+<ul>
+<li>Solved a problem in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1314568084" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/91" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/91/hovercard" href="https://github.com/mridoni/gixsql/issues/91">#91</a> (string constants with single/double quotes are now parsed and emitted correctly)</li>
+<li>Solved a problem in <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1295941001" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/88" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/88/hovercard" href="https://github.com/mridoni/gixsql/issues/88">#88</a> ("smart" cursor initialization is now performed correctly)</li>
+<li>Solved <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1315035427" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/93" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/93/hovercard" href="https://github.com/mridoni/gixsql/issues/93">#93</a></li>
+</ul>
+<p>Notes:</p>
+<ul>
+<li>"smart" cursor initialization is now the default. The <code>-L</code> switch now <em>disables</em> smart cursor initialization, while its long form has been changed to <code>no-smart-cursor-init</code></li>
+<li>There have been changes in the preprocessing engine, so source code compiled with older versions has to be recompiled. If you are updating directly from v1.0.16 or previous versions, be sure you are using the new runtime libraries (i.e libgixsql/libgixsql-*) due to some breaking changes introduced in v1.0.17.</li>
+</ul>
+<p> </p>
+<p>An autoconf-enabled source package is <a href="https://github.com/mridoni/gixsql/releases/tag/v1.0.18dev1">available on the (pre)release page</a> at GitHub</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Gix-IDE v1.0.17 is out</title>
         <author>
@@ -311,28 +344,6 @@
 <p>Binary and source packages are available as usual on the Releases page on GitHub:<br><a href="https://github.com/mridoni/gix/releases/tag/v1.0.10">https://github.com/mridoni/gix/releases/tag/v1.0.10</a></p>
 <p>Another release (v1.0.11) will probably follow in a couple of weeks (more or less) with some improvements (e.g. feature parity for all database drivers) and<span style="font-size: 18.4px; color: var(--text-editor-body-color); font-family: var(--font-base); font-weight: var(--font-weight-normal);"> </span><span style="font-size: 18.4px; color: var(--text-editor-body-color); font-family: var(--font-base); font-weight: var(--font-weight-normal);">post-1.0.10</span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"> fixes.</span></p>
 <p>In the meantime the work on the future release 1.1.x, that will incorporate a standalone and remote debugger, is progressing nicely.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Gix-IDE v1.0.9</title>
-        <author>
-            <name>Marco Ridoni</name>
-        </author>
-        <link href="https://mridoni.github.io/gix-ide-v109.html"/>
-        <id>https://mridoni.github.io/gix-ide-v109.html</id>
-
-        <updated>2022-02-25T14:29:28+01:00</updated>
-            <summary>
-                <![CDATA[
-                    Gix-IDE (and GixSQL) v1.0.9 have just been published on GitHub. This release fixes a bug in the Linux debugger (see issue #49) and adds a new "screen resolution" setting in the "Settings" dialog (should help with issue #32). As usual, binary and source packages are available in the Releases section on GitHub. 
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Gix-IDE (and GixSQL) v1.0.9 have just been published on GitHub. This release fixes a bug in the Linux debugger (see issue <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1147163815" data-permission-text="Title is private" data-url="https://github.com/mridoni/gix/issues/49" data-hovercard-type="issue" data-hovercard-url="/mridoni/gix/issues/49/hovercard" href="https://github.com/mridoni/gix/issues/49">#49</a>) and adds a new "screen resolution" setting in the "Settings" dialog (should help with issue <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1049286768" data-permission-text="Title is private" data-url="https://github.com/mridoni/gix/issues/32" data-hovercard-type="issue" data-hovercard-url="/mridoni/gix/issues/32/hovercard" href="https://github.com/mridoni/gix/issues/32">#32</a>).</p>
-<p>As usual, binary and source packages are <a href="https://github.com/mridoni/gix/releases/tag/v1.0.9" target="_blank" rel="noopener noreferrer">available in the Releases section</a> on GitHub.</p>
-<p> </p>
             ]]>
         </content>
     </entry>
