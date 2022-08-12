@@ -3,12 +3,61 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-07-27T15:28:00+02:00</updated>
+    <updated>2022-08-12T18:12:54+02:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>Gix-IDE: the standalone debugger</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gix-ide-the-standalone-debugger.html"/>
+        <id>https://mridoni.github.io/gix-ide-the-standalone-debugger.html</id>
+
+        <updated>2022-08-12T18:12:54+02:00</updated>
+            <summary>
+                <![CDATA[
+                    The "standalone debugger" for Gix-IDE is almost here. Preliminary tests are going very well, and while I cannot give a firm release date, a pre-release (Windows only at first) should be coming in September. The new debugger will at first have more or less the same feature set of the old one, but the new architecture will allow in the future things as remote debugging and cross-architecture debugging (i.e. debugging x86 code on x64 platform).
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>The "standalone debugger" for Gix-IDE is almost here. Preliminary tests are going very well, and while I cannot give a firm release date, a pre-release (Windows only at first) should be coming in September.</p>
+<p>The new debugger will at first have more or less the same feature set of the old one, but the new architecture will allow in the future things as remote debugging and cross-architecture debugging (i.e. debugging x86 code on x64 platform).</p>
+<p>The debug clients (including obviously Gix-IDE) will connect using a standard client library, and it will be possible to write a client from scratch or incorporate the debug client library into existing tools (I am writing a minimal text-based client to simplify testing the library).</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>New drivers for GixSQL and more</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/new-drivers-for-gixsql-and-more.html"/>
+        <id>https://mridoni.github.io/new-drivers-for-gixsql-and-more.html</id>
+
+        <updated>2022-08-12T18:04:38+02:00</updated>
+            <summary>
+                <![CDATA[
+                    In the last few weeks I have been working on two new DB drivers for GixSQL. The first is an Oracle driver, based on ODPI. The second driver targets SQLite v3. Both drivers are fully functional and have passed the current test suite on x86 and x64 platforms. In the next days/weeks I have the intention of bringing up to speed the MySQL and ODBC drivers, that still lack some functionality (e.g. prepared statement support).
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>In the last few weeks I have been working on two new DB drivers for GixSQL.</p>
+<p>The first is an Oracle driver, based on <a href="https://oracle.github.io/odpi/">ODPI</a>. The second driver targets SQLite v3. Both drivers are fully functional and have passed the current test suite on x86 and x64 platforms.</p>
+<p>In the next days/weeks I have the intention of bringing up to speed the MySQL and ODBC drivers, that still lack some functionality (e.g. prepared statement support). A lot has changed, including in the preprocessor , so when the new version of GixSQL will be out preprocessing and compiling your software again will be a mandatory step.</p>
+<p>All this work was also useful to perform a sort of "shakedown" of the codebase: several bugs were located and resolved (notably in COMP-3 handling, that could break on platforms other than PostgreSQL). </p>
+<p>I also rewrote the test suite: now there is a "dynamic driver" - still using MSTest - that automatically generates individual test cases from an XML file. This allows me to write a single test case and then run it with different database drivers and on different platforms (Windows only, for now, but who knows? :-) )</p>
+<p>There are of course of bunches of issues already opened on GitHub that have been solved and will be in the next release too.</p>
+<p>If all goes well the release date will be someday in late August, first days of September at most (still have to prepare the Linux/autoconf build scripts for the new drivers and test there), at least for a prerelease.</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>GixSQL v1.0.18dev1 is out</title>
         <author>
@@ -276,74 +325,6 @@
 <li>GixSQL: Fixed "outputs too many periods - breaks code flow" (#82)</li>
 <li>GixSQL: Fixed allocation of "realdata" buffer"<br><br><br>Binary and source packages are available as usual on the Releases page on GitHub:<br><a href="https://github.com/mridoni/gix/releases/tag/v1.0.12" target="_blank" rel="noopener noreferrer">https://github.com/mridoni/gix/releases/tag/v1.0.12</a><br><br>Starting from the next version (v1.0.13, presumably) the repository will be split in two, with separate repositories for Gix-IDE and GixSQL. This is necessary to allow for a faster release cycle for both components.<br><br>In the meantime the work on the future release 1.1.x, that will incorporate a standalone and remote debugger, is progressing nicely.</li>
 </ul>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Gix-IDE and GixSQL 1.0.11 available now</title>
-        <author>
-            <name>Marco Ridoni</name>
-        </author>
-        <link href="https://mridoni.github.io/gix-ide-and-gixsql-1011-available-now.html"/>
-        <id>https://mridoni.github.io/gix-ide-and-gixsql-1011-available-now.html</id>
-
-        <updated>2022-04-07T16:04:52+02:00</updated>
-            <summary>
-                <![CDATA[
-                    The new versions of Gix-IDE and GixSQL have just been published. This is a maintenance release for GixSQL, that fixes a few bugs and introduces some improvements: Binary and source packages are available as usual on the Releases page on GitHub: https://github.com/mridoni/gix/releases/tag/v1.0.11 Another release (v1.0.12) will probably follow in a few weeks with more improvements for GixSQL. In the meantime the work on the future release 1.1.x, that will incorporate a standalone and remote debugger,&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>The new versions of Gix-IDE and GixSQL have just been published. This is a maintenance release for GixSQL, that fixes a few bugs and introduces some improvements:</p>
-<ul>
-<li>Implemented "EXEC SQL IGNORE" (<a href="https://github.com/mridoni/gix/issues/73">GitHub issue #73</a>)</li>
-<li>Fixed "DISCONNECT is broken" (<a href="https://github.com/mridoni/gix/issues/78">#78</a>)</li>
-<li>Fixed a "ROLLBACK TO SAVEPOINT" issue</li>
-<li>Fixed connection string parameter issue (see <a href="https://github.com/mridoni/gix/issues/39">#39</a>)</li>
-<li>Improvements to "passthru" SQL statements (see <a href="https://github.com/mridoni/gix/issues/68">#68</a>)</li>
-<li>Fixed a "ROLLBACK TO SAVEPOINT" regression (triggered by <a href="https://github.com/mridoni/gix/issues/67">#67</a>)</li>
-<li>Fixed "scanner checks for FD (including in literals)" (GitHub issue <a href="https://github.com/mridoni/gix/issues/65">#65</a>)</li>
-<li>Fixed "unexpected SELECTFROM - statements with sub-selects cannot be parsed (GitHub issue <a href="https://github.com/mridoni/gix/issues/66">#66</a>)</li>
-<li>Fixed "CONNECT...IDENTIFIED BY" (GitHub issue <a href="https://github.com/mridoni/gix/issues/43">#43</a>)<br><br></li>
-</ul>
-<p>Binary and source packages are available as usual on the Releases page on GitHub:<br><a href="#INTERNAL_LINK#/tag/NaN">https://github.com/mridoni/gix/releases/tag/v1.0.11</a></p>
-<p>Another release (v1.0.12) will probably follow in a few weeks with more improvements for GixSQL.</p>
-<p>In the meantime the work on the future release 1.1.x, that will incorporate a standalone and remote debugger, is progressing nicely.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Gix-IDE and GixSQL v1.0.10 are available</title>
-        <author>
-            <name>Marco Ridoni</name>
-        </author>
-        <link href="https://mridoni.github.io/gix-ide-and-gixsql-v1010-are-available.html"/>
-        <id>https://mridoni.github.io/gix-ide-and-gixsql-v1010-are-available.html</id>
-
-        <updated>2022-03-16T15:43:32+01:00</updated>
-            <summary>
-                <![CDATA[
-                    The new versions of Gix-IDE and GixSQL have just been published on GitHub. This release includes the following changes: Binary and source packages are available as usual on the Releases page on GitHub: https://github.com/mridoni/gix/releases/tag/v1.0.10 Another release (v1.0.11) will probably follow in a couple of weeks (more or less) with some improvements (e.g. feature parity for all database drivers) and post-1.0.10 fixes. In the meantime the work on the future release 1.1.x, that will incorporate a standalone and&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>The new versions of Gix-IDE and GixSQL have just been published on GitHub. This release includes the following changes:</p>
-<ul>
-<li>Gix-IDE: added "Save before building" option in settings</li>
-<li>GixSQL: extended the ESQL VAR statement (added FLOAT, DECIMAL, etc.)</li>
-<li>GixSQL: added support for prepared statements</li>
-<li>GixSQL: added support for EXECUTE IMMEDIATE</li>
-<li>GixSQL: fixed handling of BEGIN/END DECLARE SECTION</li>
-<li>GixSQL: fixed autoconf package</li>
-<li>GixSQL: fixed command line options in gixpp</li>
-<li>GixSQL: fixed display of error messages in gixpp/libgixpp</li>
-<li>GixSQL: added ocesql-style wrapper for gixpp</li>
-</ul>
-<p>Binary and source packages are available as usual on the Releases page on GitHub:<br><a href="https://github.com/mridoni/gix/releases/tag/v1.0.10">https://github.com/mridoni/gix/releases/tag/v1.0.10</a></p>
-<p>Another release (v1.0.11) will probably follow in a couple of weeks (more or less) with some improvements (e.g. feature parity for all database drivers) and<span style="font-size: 18.4px; color: var(--text-editor-body-color); font-family: var(--font-base); font-weight: var(--font-weight-normal);"> </span><span style="font-size: 18.4px; color: var(--text-editor-body-color); font-family: var(--font-base); font-weight: var(--font-weight-normal);">post-1.0.10</span><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"> fixes.</span></p>
-<p>In the meantime the work on the future release 1.1.x, that will incorporate a standalone and remote debugger, is progressing nicely.</p>
             ]]>
         </content>
     </entry>
