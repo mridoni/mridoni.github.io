@@ -3,7 +3,7 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-08-12T18:12:54+02:00</updated>
+    <updated>2022-08-12T18:41:24+02:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
@@ -39,7 +39,7 @@
         <link href="https://mridoni.github.io/new-drivers-for-gixsql-and-more.html"/>
         <id>https://mridoni.github.io/new-drivers-for-gixsql-and-more.html</id>
 
-        <updated>2022-08-12T18:04:38+02:00</updated>
+        <updated>2022-08-12T18:41:24+02:00</updated>
             <summary>
                 <![CDATA[
                     In the last few weeks I have been working on two new DB drivers for GixSQL. The first is an Oracle driver, based on ODPI. The second driver targets SQLite v3. Both drivers are fully functional and have passed the current test suite on x86 and x64 platforms. In the next days/weeks I have the intention of bringing up to speed the MySQL and ODBC drivers, that still lack some functionality (e.g. prepared statement support).
@@ -52,7 +52,7 @@
 <p>In the next days/weeks I have the intention of bringing up to speed the MySQL and ODBC drivers, that still lack some functionality (e.g. prepared statement support). A lot has changed, including in the preprocessor , so when the new version of GixSQL will be out preprocessing and compiling your software again will be a mandatory step.</p>
 <p>All this work was also useful to perform a sort of "shakedown" of the codebase: several bugs were located and resolved (notably in COMP-3 handling, that could break on platforms other than PostgreSQL). </p>
 <p>I also rewrote the test suite: now there is a "dynamic driver" - still using MSTest - that automatically generates individual test cases from an XML file. This allows me to write a single test case and then run it with different database drivers and on different platforms (Windows only, for now, but who knows? :-) )</p>
-<p>There are of course of bunches of issues already opened on GitHub that have been solved and will be in the next release too.</p>
+<p>There is of course a bunch of issues already opened on GitHub that have been solved and will be in the next release too.</p>
 <p>If all goes well the release date will be someday in late August, first days of September at most (still have to prepare the Linux/autoconf build scripts for the new drivers and test there), at least for a prerelease.</p>
 <p> </p>
             ]]>
