@@ -3,12 +3,64 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-08-23T15:53:01+02:00</updated>
+    <updated>2022-08-26T17:57:11+02:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>Gix-IDE v1.0.18</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gix-ide-v1018.html"/>
+        <id>https://mridoni.github.io/gix-ide-v1018.html</id>
+
+        <updated>2022-08-26T17:57:11+02:00</updated>
+            <summary>
+                <![CDATA[
+                    This is basically a "refresh" release that incorporates all the latest developments in GixSQL. There are no changes to the IDE or the debugger. Binary packages available: A summary of new features and fixes (issue numbers correspond to issues in the GixSQL repository): As usual, binary and source packages are available on the Release page on GitHub.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>This is basically a "refresh" release that incorporates all the latest developments in GixSQL. There are no changes to the IDE or the debugger. </p>
+<p>Binary packages available:</p>
+<ul>
+<li>Windows x86</li>
+<li>Windows x64</li>
+<li>Linux x64 (Ubuntu 20.04)</li>
+</ul>
+<p>A summary of new features and fixes (issue numbers correspond to issues in the <a href="https://github.com/mridoni/gixsql">GixSQL repository</a>):</p>
+<ul>
+<li>Added new Oracle driver, based on ODPI</li>
+<li>Added new SQLite driver</li>
+<li>All the drivers have been updated and now implement the complete set of supported features</li>
+<li>Solution for "PG: issue with prepared statements" (#99)</li>
+<li>Solution for "PCursors cannot be re-opened after close" (#98)</li>
+<li>Solution for "libgixpp: setStatus is called for errors without DBI parm passed - sets SQLERRM" (#94)</li>
+<li>Solution for "error handling (especially for 07001)" (#92)</li>
+<li>Solution for "show-stopper bug in pgsql_prepare" (#91)</li>
+<li>Solution for "PREPARE does not work with VARLENGTH groups (ocesql compat)" (#79)</li>
+<li>Partial solution for "PREPARE does not work with VARLENGTH groups (ocesql compat)" (#68)</li>
+<li>Solution for "The PostgreSQL driver needs START TRANSACTION before using cursors" (#14)</li>
+<li>Solution for "FR: support EXEC SQL VAR" (#21)</li>
+<li>Fixed a bug in "problems with "codegen / logic issue for "GIXSQLCursorDeclareParams" (#88)</li>
+<li>Solution for "FR: allow mapping of "NoRecCode"' (#95) - added --no-rec-code parameter to gixpp</li>
+<li>Tokens in the parser have been labeled to improve diagnostics (pulled PR #96 by @GitMensch)</li>
+<li>Fixed COMP-3 handling in drivers other than PostgreSQL</li>
+<li>Rewrote the test suite (still MSTest-based) to dynamically generate a matrix of test to be run on the various platforms/database drivers</li>
+<li>Added options for parameter generation in gixpp (-a was removed)</li>
+<li>Added new GIXSQL_FIXUP_PARAMS option for runtime, to automatically convert parameter format in prepared statements</li>
+<li>"Native" cursors are now the default for the PostgreSQL driver</li>
+<li>"Smart" cursor initialization is now the default for all cursors, including those declared in WORKING-STORAGE (-L was removed from gixpp), should fix #101</li>
+<li>Removed dynamic cursor emulation from the ODBC driver when using PostgreSQL</li>
+</ul>
+<p>As usual, binary and source packages are available on the <a href="https://github.com/mridoni/gix/releases/tag/v1.0.18" target="_blank" rel="noopener noreferrer">Release page</a> on GitHub.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>GixSQL v1.0.18 is here</title>
         <author>
@@ -314,53 +366,6 @@
 <li>Several binary dependencies are now installed with vcpkg (on Windows)</li>
 </ol>
 <p>Due to 4) and 5) I am overhauling the build/test system, so the binary packages are taking a bit longer than expected, but they should be ready in or two more weeks.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Gix-IDE and GixSQL 1.0.15</title>
-        <author>
-            <name>Marco Ridoni</name>
-        </author>
-        <link href="https://mridoni.github.io/gix-ide-and-gixsql-1015.html"/>
-        <id>https://mridoni.github.io/gix-ide-and-gixsql-1015.html</id>
-
-        <updated>2022-05-18T15:33:50+02:00</updated>
-            <summary>
-                <![CDATA[
-                    This is a maintenance release for Gix-IDE and GixSQL, that fixes a few issues and adds some new features, mainly for GixSQL. All the packages (available as usual on GitHub) are signed with my GPG private key. The corresponding public key (m.ridoni@gmail.com, fingerprint 70E4 08CF B89B 5FA8 32E4 5292 EFDC 94BD 5260 B939) has been published on pgp.mit.edu and keyserver.ubuntu.com and is available at https://github.com/mridoni.gpg Binary packages available: A summary of new features and fixes: Gix-IDE:&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>This is a maintenance release for Gix-IDE and GixSQL, that fixes a few issues and adds some new features, mainly for GixSQL.</p>
-<p>All the packages (available as usual on <a href="https://github.com/mridoni/gix/releases/tag/v1.0.15" target="_blank" rel="noopener noreferrer">GitHub</a>) are signed with my GPG private key. The corresponding public key (<a href="mailto:m.ridoni@gmail.com">m.ridoni@gmail.com</a>, fingerprint 70E4 08CF B89B 5FA8 32E4 5292 EFDC 94BD 5260 B939) has been published on pgp.mit.edu and keyserver.ubuntu.com and is available at <a href="https://github.com/mridoni.gpg">https://github.com/mridoni.gpg</a></p>
-<p>Binary packages available:</p>
-<ul>
-<li>Windows x86</li>
-<li>Windows x64</li>
-<li>Linux x64 (Ubuntu 20.04)</li>
-</ul>
-<p>A summary of new features and fixes:</p>
-<ul>
-<li>Gix-IDE: Fixed a few layout problems in the Properties window</li>
-<li>Gix-IDE: Fixed "Compile errors when using -Werror=format-security" (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1211976806" data-permission-text="Title is private" data-url="https://github.com/mridoni/gix/issues/100" data-hovercard-type="issue" data-hovercard-url="/mridoni/gix/issues/100/hovercard" href="https://github.com/mridoni/gix/issues/100">#100</a>)</li>
-<li>Gix-IDE: Added trace output to DwarfSymbolProvider (debug builds only)</li>
-<li>Gix-IDE: Fixed "Differences between the packed version and the source code?" (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1211286163" data-permission-text="Title is private" data-url="https://github.com/mridoni/gix/issues/99" data-hovercard-type="issue" data-hovercard-url="/mridoni/gix/issues/99/hovercard" href="https://github.com/mridoni/gix/issues/99">#99</a>)</li>
-<li>GixSQL: Fixed "long queries break COBOL compiler" (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="823736445" data-permission-text="Title is private" data-url="https://github.com/mridoni/gix/issues/8" data-hovercard-type="issue" data-hovercard-url="/mridoni/gix/issues/8/hovercard" href="https://github.com/mridoni/gix/issues/8">#8</a>)</li>
-<li>GixSQL: Fixed a couple of possible parser crashes</li>
-<li>GixSQL: Fixed a regression in the solution for <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="823732606" data-permission-text="Title is private" data-url="https://github.com/mridoni/gix/issues/7" data-hovercard-type="pull_request" data-hovercard-url="/mridoni/gix/pull/7/hovercard" href="https://github.com/mridoni/gix/pull/7">#7</a></li>
-<li>GixSQL: Fixed "Set (more) correct error code for 'SQLSTATE FFFFF'" (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="831137492" data-permission-text="Title is private" data-url="https://github.com/mridoni/gix/issues/17" data-hovercard-type="pull_request" data-hovercard-url="/mridoni/gix/pull/17/hovercard" href="https://github.com/mridoni/gix/pull/17">#17</a>)</li>
-<li>GixSQL: Fixed "possibly not correct setup of SQLSTATE" (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="823732606" data-permission-text="Title is private" data-url="https://github.com/mridoni/gix/issues/7" data-hovercard-type="pull_request" data-hovercard-url="/mridoni/gix/pull/7/hovercard" href="https://github.com/mridoni/gix/pull/7">#7</a>), for now PostgreSQL only</li>
-<li>GixSQL: Fixed "Add support for VARYING groups" (#38)</li>
-<li>GixSQL: Moved variable length filed storage to COMP-5 instead of binary</li>
-<li>GixSQL: Fixed "translation defect in 1.0.12" (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="823705048" data-permission-text="Title is private" data-url="https://github.com/mridoni/gix/issues/1" data-hovercard-type="pull_request" data-hovercard-url="/mridoni/gix/pull/1/hovercard" href="https://github.com/mridoni/gix/pull/1">#1</a>)</li>
-<li>GixSQL: Fixed "scanner eating SECTIONs" (#36)</li>
-<li>GixSQL: Removed unnecessary build files</li>
-<li>GixSQL: Fixed autoconf scripts, "make distcheck" now works</li>
-<li>GixSQL: Fixed installer script (Windows)</li>
-<li>GixSQL: Formatting fixes</li>
-</ul>
             ]]>
         </content>
     </entry>
