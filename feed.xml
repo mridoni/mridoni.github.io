@@ -3,7 +3,7 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-09-21T09:06:43+02:00</updated>
+    <updated>2022-09-21T09:15:45+02:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://mridoni.github.io/what-is-coming-for-gix-ide-and-gixsql.html"/>
         <id>https://mridoni.github.io/what-is-coming-for-gix-ide-and-gixsql.html</id>
 
-        <updated>2022-09-21T09:06:43+02:00</updated>
+        <updated>2022-09-21T09:15:45+02:00</updated>
             <summary>
                 <![CDATA[
                     I am taking a brief pause (i.e. vacation) in the next couple of weeks but I didn't want to leave before giving a few notes about the next steps. See you soon.
@@ -27,9 +27,9 @@
             <![CDATA[
                 <p>I am taking a brief pause (i.e. vacation) in the next couple of weeks but I didn't want to leave before giving a few notes about the next steps.</p>
 <ul>
-<li>The new debugger for Gix-IDE is at the point where it can be integrated into the main branch. The next version will have the possibility to choose between the current (named "standard") debugger and the "experimental" one). At first I thought of shipping the two versions in parallel for some time, but this proved unfeasible: too many things changed between the two versions of Gix-IDE and keeping them in sync - for stuff that is not debugger-related - is simply too much work. Of course this "fusion" (it's the internal name of the branch I am working on) in turn led to a lot of changes that need to be tested, together with several changes in building and packaging. This means that the "fusion" pre-release will have to wait a few weeks, until I am satisfied that the standard debugger keeps working as it should, but from that moment on, adding features and fixing things should be much easier.</li>
-<li>I am switching the building and packaging process for binary packages to GitHub Actions. It will also take some time for the new release pipeline to reach a certain level of stability and to abandon the old process, but this will make releasing new and "ad interim" versions easier and quicker, and in a more reproducible way.</li>
-<li>GixSQL development will advance in two main directions: 1) autocommit needs to be reviewed and (probably) fixed for all drivers. 2) updatable cursor support needs to be improved (or, in some cases/drivers, implemented). There is also space for making progress in areas like memory usage, logging, automated testing, refactoring, etc. and, of course, for the usual amount of bug-fixing and parser modifications (thanks, as usual, to Simon Sobisch, whose support has been invaluable).</li>
+<li>The new debugger for Gix-IDE is at the point where it can be integrated into the main branch. The next version will have the possibility to choose between the current (named "standard") debugger and the "experimental" one. At first I thought of shipping the two versions in parallel for some time, but this proved unfeasible: too many things changed between the two versions of Gix-IDE and keeping them in sync - for stuff that is not debugger-related - is simply too much work. Of course this "fusion" (it's the internal name of the branch I am working on) in turn led to a lot of changes that need to be tested, together with several changes in building and packaging. This means that the "fusion" pre-release will have to wait a few weeks, until I am satisfied that the standard debugger keeps working as it should, but from that moment on, adding features and fixing things should be much easier.</li>
+<li>I am switching the building and packaging process for binary packages to GitHub Actions. It will also take some time for the new release pipeline to reach a certain level of stability and to abandon the old process, but this will make releasing new and "ad interim" versions easier and quicker, and also more reproducible, especially for Windows builds.</li>
+<li>GixSQL development will advance in two main directions: 1) the "autocommit" feature needs to be reviewed and (probably) fixed for all drivers. 2) updatable cursor support needs to be improved (or, in some cases/drivers, implemented). There is also space for making progress in areas like memory usage, logging, automated testing, refactoring, etc. and, of course, for the usual amount of bug-fixing and parser modifications (thanks, as usual, to Simon Sobisch, whose support has been invaluable).</li>
 </ul>
 <p>See you soon.</p>
             ]]>
