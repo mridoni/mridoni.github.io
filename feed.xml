@@ -3,7 +3,7 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-10-11T10:32:30+02:00</updated>
+    <updated>2022-10-11T10:48:06+02:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
@@ -17,15 +17,15 @@
         <link href="https://mridoni.github.io/mid-october-update.html"/>
         <id>https://mridoni.github.io/mid-october-update.html</id>
 
-        <updated>2022-10-11T10:32:30+02:00</updated>
+        <updated>2022-10-11T10:48:06+02:00</updated>
             <summary>
                 <![CDATA[
-                     I am back and I am continuing to review and modify the build process, this issue should be solved as soon as the next release is out. Due to work-related constraints I cannot give (for now) a solid timeframe, but I hope to have a pre-release in a couple of weeks, maybe a partial one earlier. The goals are: Release a version that contains the new ("experimental") debugger but also ships the "standard" one,&hellip;
+                     I am back and I am continuing to review and modify the build process, a few packaging/build related issues should be solved as soon as the next release is out. Due to work-related constraints I cannot give (for now) a solid timeframe, but I hope to have a pre-release in a couple of weeks, maybe a partial one earlier. The goals are: Release a version that contains the new ("experimental") debugger but also ships&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p><br>I am back and I am continuing to review and modify the build process, this issue should be solved as soon as the next release is out. Due to work-related constraints I cannot give (for now) a solid timeframe, but I hope to have a pre-release in a couple of weeks, maybe a partial one earlier.</p>
+                <p><br>I am back and I am continuing to review and modify the build process, a few packaging/build related issues should be solved as soon as the next release is out. Due to work-related constraints I cannot give (for now) a solid timeframe, but I hope to have a pre-release in a couple of weeks, maybe a partial one earlier.</p>
 <p>The goals are:</p>
 <ul>
 <li>Release a version that contains the new ("experimental") debugger but also ships the "standard" one, that will be the </li>
