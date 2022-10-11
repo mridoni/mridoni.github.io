@@ -3,7 +3,7 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-10-11T10:48:06+02:00</updated>
+    <updated>2022-10-11T11:31:07+02:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://mridoni.github.io/mid-october-update.html"/>
         <id>https://mridoni.github.io/mid-october-update.html</id>
 
-        <updated>2022-10-11T10:48:06+02:00</updated>
+        <updated>2022-10-11T11:31:07+02:00</updated>
             <summary>
                 <![CDATA[
                      I am back and I am continuing to review and modify the build process, a few packaging/build related issues should be solved as soon as the next release is out. Due to work-related constraints I cannot give (for now) a solid timeframe, but I hope to have a pre-release in a couple of weeks, maybe a partial one earlier. The goals are: Release a version that contains the new ("experimental") debugger but also ships&hellip;
@@ -28,7 +28,7 @@
                 <p><br>I am back and I am continuing to review and modify the build process, a few packaging/build related issues should be solved as soon as the next release is out. Due to work-related constraints I cannot give (for now) a solid timeframe, but I hope to have a pre-release in a couple of weeks, maybe a partial one earlier.</p>
 <p>The goals are:</p>
 <ul>
-<li>Release a version that contains the new ("experimental") debugger but also ships the "standard" one, that will be the </li>
+<li>Release a version that contains the new ("experimental") debugger but also ships the "standard" one, that will be - for a hopefully short time - the version to be still normally used</li>
 <li>Release a packaged version for Windows from the new build system (using GitHub actions)</li>
 <li>Include, where possible/desired, versions of GnuCOBOL built with a standard process (also using GitHub actions)</li>
 <li>Release new Linux packages for different distributions (at least Ubuntu 20.04 + 22, Debian 10 + 11, possibly Fedora 35/36) </li>
