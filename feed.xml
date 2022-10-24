@@ -3,12 +3,39 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-10-11T11:31:56+02:00</updated>
+    <updated>2022-10-24T13:05:06+02:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>October progress update</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/october-progress-update.html"/>
+        <id>https://mridoni.github.io/october-progress-update.html</id>
+
+        <updated>2022-10-24T13:05:06+02:00</updated>
+            <summary>
+                <![CDATA[
+                    GixSQL v1.0.18b (still a pre-release - or ad interim if you prefer) is almost ready and should be out in a couple of days at most. As I am writing this, the packages are being built and, after some testing, will be published on GitHub. Then the work will start on v1.0.19. GixSQL v1.0.18b will include solutions for issues #119, #88 and PR #127 (thanks to Simon Sobisch for that). The new build/packaging process (based&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>GixSQL v1.0.18b (still a pre-release - or <em>ad interim</em> if you prefer) is almost ready and should be out in a couple of days at most. As I am writing this, the packages are being built and, after some testing, will be published on GitHub. Then the work will start on v1.0.19. GixSQL v1.0.18b will include solutions for issues <a href="https://github.com/mridoni/gixsql/issues/119" target="_blank" rel="noopener noreferrer">#119</a>, <a href="https://github.com/mridoni/gixsql/issues/88" target="_blank" rel="noopener noreferrer">#88</a> and PR <a href="https://github.com/mridoni/gixsql/issues/127" target="_blank" rel="noopener noreferrer">#127</a> (thanks to Simon Sobisch for that).</p>
+<p>The new build/packaging process (based on GitHub Actions) is going well, and should be ready for a pre-release in a couple of weeks at most, maybe less. As some of you may have noticed, a new branch (named "new-debugger") has debuted on Gix-IDE's repository. When everything is ready:</p>
+<ul>
+<li>the "new-debugger" branch will be merged into the main branch</li>
+<li>the workflow files for Github Actions will be adjusted and made public</li>
+<li>binary packages will be released from the new build/packaging system</li>
+</ul>
+<p>For the more adventurous of you: the "new-debugger" branch is already usable and should compile (almost) without problems, but your mileage, as usual, may vary.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Mid-October update</title>
         <author>
@@ -20,7 +47,7 @@
         <updated>2022-10-11T11:31:56+02:00</updated>
             <summary>
                 <![CDATA[
-                     I am back and I am continuing to review and modify the build process, a few packaging/build related issues should be solved as soon as the next release is out. Due to work-related constraints I cannot give (for now) a solid timeframe, but I hope to have a pre-release in a couple of weeks, maybe a partial one earlier. The goals are: Release a version that contains the new ("experimental") debugger but also ships&hellip;
+                    I am back and I am continuing to review and modify the build process, a few packaging/build related issues should be solved as soon as the next release is out. Due to work-related constraints I cannot give (for now) a solid timeframe, but I hope to have a pre-release in a couple of weeks, maybe a partial one earlier. The goals are: Release a version that contains the new ("experimental") debugger but also ships the&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -330,31 +357,6 @@
 <li>GixSQL: Fixed a few memory leaks</li>
 </ul>
 <p>As usual, binary and source packages are available on the <a href="https://github.com/mridoni/gix/releases/tag/v1.0.17" target="_blank" rel="noopener noreferrer">Release page</a> on GitHub.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Gix-IDE v1.0.17 is coming</title>
-        <author>
-            <name>Marco Ridoni</name>
-        </author>
-        <link href="https://mridoni.github.io/gix-ide-v1017-is-coming.html"/>
-        <id>https://mridoni.github.io/gix-ide-v1017-is-coming.html</id>
-
-        <updated>2022-07-16T19:18:16+02:00</updated>
-            <summary>
-                <![CDATA[
-                    The new version of Gix-IDE is coming. This is basically a "refresh" release that incorporates all the latest developments in GixSQL. There are no changes to the IDE or the debugger. You can find a summary of the new features and fixes in GixSQL here. Packages have already been built, I just need to test them (a few modifications have been made to the packaging system that needs to be tested) but they will probably&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>The new version of Gix-IDE is coming. This is basically a "refresh" release that incorporates all the latest developments in GixSQL. There are no changes to the IDE or the debugger.</p>
-<p>You can find a summary of the new features and fixes in GixSQL <a href="https://github.com/mridoni/gixsql/releases/tag/v1.0.17" target="_blank" rel="noopener noreferrer">here</a>.</p>
-<p>Packages have already been built, I just need to test them (a few modifications have been made to the packaging system that needs to be tested) but they will probably be available during the next week.</p>
-<p><em>P.S. there is no published v1.0.16 version of Gix-IDE, I jumped directly from 1.0.15 to 1.0.17 to keep the versioning of Gix-IDE and GixSQL aligned. Gix-IDE v1.0.16 only exists as an internal version.</em></p>
-<p> </p>
-<p> </p>
             ]]>
         </content>
     </entry>
