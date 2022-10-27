@@ -3,12 +3,49 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-10-24T13:05:06+02:00</updated>
+    <updated>2022-10-27T17:49:28+02:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>GixSQL v1.0.18b is out</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gixsql-v1018b-is-out.html"/>
+        <id>https://mridoni.github.io/gixsql-v1018b-is-out.html</id>
+
+        <updated>2022-10-27T17:49:28+02:00</updated>
+            <summary>
+                <![CDATA[
+                    This is a "hotfix" release for GixSQL, that fixes a few issues. Available binary packages: There is also a autoconf-enabled source package, to make building on Linux and MinGW easier. A summary of new features and fixes: All the binary packages are available, as usual, on the corresponding Release page on GitHub.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>This is a "hotfix" release for GixSQL, that fixes a few issues. </p>
+<p>Available binary packages:</p>
+<ul>
+<li>Windows x64 (MSVC + MinGW)</li>
+<li>Windows x64 (MinGW only)</li>
+<li>Windows x86 (MSVC + MinGW)</li>
+<li>Windows x86 (MinGW only)</li>
+<li>Windows x86 "portable"</li>
+<li>Linux x64 (Ubuntu 20.04)</li>
+</ul>
+<p>There is also a autoconf-enabled source package, to make building on Linux and MinGW easier.</p>
+<p>A summary of new features and fixes:</p>
+<ul>
+<li>Changed cursor initialization (should fix <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1295941001" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/88" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/88/hovercard" href="https://github.com/mridoni/gixsql/issues/88">#88</a>)</li>
+<li>Fix for "1.0.17/1.0.18 regression: COMMIT and ROLLBACK delete all cursor definitions -&gt; Status -111" (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1355475097" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/119" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/119/hovercard" href="https://github.com/mridoni/gixsql/issues/119">#119</a>)</li>
+<li>Merged pull request <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1402670500" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/127" data-hovercard-type="pull_request" data-hovercard-url="/mridoni/gixsql/pull/127/hovercard" href="https://github.com/mridoni/gixsql/pull/127">#127</a> (thanks to Simon Sobisch)</li>
+</ul>
+<p>All the binary packages are available, as usual, on the corresponding <a href="https://github.com/mridoni/gixsql/releases/tag/v1.0.18b" target="_blank" rel="noopener noreferrer">Release page on GitHub</a>.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>October progress update</title>
         <author>
@@ -314,49 +351,6 @@
 </ul>
 <p> </p>
 <p>An autoconf-enabled source package is <a href="https://github.com/mridoni/gixsql/releases/tag/v1.0.18dev1">available on the (pre)release page</a> at GitHub</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Gix-IDE v1.0.17 is out</title>
-        <author>
-            <name>Marco Ridoni</name>
-        </author>
-        <link href="https://mridoni.github.io/gix-ide-v1017-is-out.html"/>
-        <id>https://mridoni.github.io/gix-ide-v1017-is-out.html</id>
-
-        <updated>2022-07-21T16:15:46+02:00</updated>
-            <summary>
-                <![CDATA[
-                    This is basically a "refresh" release that incorporates all the latest developments in GixSQL. There are no changes to the IDE or the debugger. There is no v1.0.16 release for Gix-IDE. Binary packages available: A summary of new features and fixes (issue numbers correspond to issues in the GixSQL repository): As usual, binary and source packages are available on the Release page on GitHub.
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>This is basically a "refresh" release that incorporates all the latest developments in GixSQL. There are no changes to the IDE or the debugger. There is no v1.0.16 release for Gix-IDE.</p>
-<p>Binary packages available:</p>
-<ul>
-<li>Windows x86</li>
-<li>Windows x64</li>
-<li>Linux x64 (Ubuntu 20.04)</li>
-</ul>
-<p>A summary of new features and fixes (issue numbers correspond to issues in the <a href="https://github.com/mridoni/gixsql">GixSQL repository</a>):</p>
-<ul>
-<li>GixSQL: Added support for "smart" cursor initialization (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1182174485" data-permission-text="Title is private" data-url="https://github.com/mridoni/gix/issues/88" data-hovercard-type="issue" data-hovercard-url="/mridoni/gix/issues/88/hovercard" href="https://github.com/mridoni/gix/issues/88">#88</a>)</li>
-<li>GixSQL: Added support for EXECUTE prepared-statement INTO #(87)</li>
-<li>GixSQL: Fixed a logging problem (#84)</li>
-<li>GixSQL: Fixed "wrong generated COBOL in 1.0.16" (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1179221314" data-permission-text="Title is private" data-url="https://github.com/mridoni/gix/issues/83" data-hovercard-type="pull_request" data-hovercard-url="/mridoni/gix/pull/83/hovercard" href="https://github.com/mridoni/gix/pull/83">#83</a>)</li>
-<li>GixSQL: Fixed "missing "close" for spdlog?" (#82)</li>
-<li>GixSQL: Added support for using prepared statements in cursors (#81)</li>
-<li>GixSQL: Variable length fields indicators are now 32-bit long by default (#80)</li>
-<li>GixSQL: Added support for using variable length fields with prepared statements (#79)</li>
-<li>GixSQL: Added upport for using group fields in INSERT and SELECT..INTO statements (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="823732081" data-permission-text="Title is private" data-url="https://github.com/mridoni/gix/issues/6" data-hovercard-type="issue" data-hovercard-url="/mridoni/gix/issues/6/hovercard" href="https://github.com/mridoni/gix/issues/6">#6</a>)</li>
-<li>GixSQL: Added support for more connection string formats (including ocesql compatibility) (#16)</li>
-<li>GixSQL: Added Support for DISCONNECT ALL (#89)</li>
-<li>GixSQL: Performed some refactoring to improve code size</li>
-<li>GixSQL: Fixed a few memory leaks</li>
-</ul>
-<p>As usual, binary and source packages are available on the <a href="https://github.com/mridoni/gix/releases/tag/v1.0.17" target="_blank" rel="noopener noreferrer">Release page</a> on GitHub.</p>
             ]]>
         </content>
     </entry>
