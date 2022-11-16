@@ -3,7 +3,7 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-11-16T18:14:40+01:00</updated>
+    <updated>2022-11-16T19:23:23+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
@@ -17,15 +17,15 @@
         <link href="https://mridoni.github.io/gixsql-mid-november-update.html"/>
         <id>https://mridoni.github.io/gixsql-mid-november-update.html</id>
 
-        <updated>2022-11-16T18:14:40+01:00</updated>
+        <updated>2022-11-16T19:23:23+01:00</updated>
             <summary>
                 <![CDATA[
-                    GixSQL is undergoing some work to re-implement two features: autocommit support and updatable cursors. Both of them have been there since the first releases, but due to several reasons (essentially lack of usage and bad assumptions) they were left behind and their functionality, in their current incarnation, is doubtful. The new implementation sees these two features being moved mainly from the main library (libgixsql) to the database driver libraries (e.g. libgixsql-pgsql), with only a few&hellip;
+                    GixSQL is undergoing some work to re-implement two features: autocommit support and updatable cursors. Both of them have been there since the first releases, but due to several reasons (essentially lack of usage and bad assumptions) they were left behind and their functionality, in their current incarnation, is dubious. The new implementation sees these two features being moved mainly from the main library (libgixsql) to the database driver libraries (e.g. libgixsql-pgsql), with only a few&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>GixSQL is undergoing some work to re-implement two features: autocommit support and updatable cursors. Both of them have been there since the first releases, but due to several reasons (essentially lack of usage and bad assumptions) they were left behind and their functionality, in their current incarnation, is doubtful.</p>
+                <p>GixSQL is undergoing some work to re-implement two features: autocommit support and updatable cursors. Both of them have been there since the first releases, but due to several reasons (essentially lack of usage and bad assumptions) they were left behind and their functionality, in their current incarnation, is dubious.</p>
 <p>The new implementation sees these two features being moved mainly from the main library (libgixsql) to the database driver libraries (e.g. libgixsql-pgsql), with only a few parameters passed around. The rationale behind this move is that different DBMSs behave in different ways, and trying to keep a unified approach would only lead to confusion (and bugs, a lot of bugs). What follows is the level of support planned for the various DB drivers.</p>
 <h4>Autocommit</h4>
 <p>Autocommit will basically work in three different modes:</p>
