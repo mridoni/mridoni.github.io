@@ -3,12 +3,55 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-11-07T18:11:16+01:00</updated>
+    <updated>2022-11-16T18:14:40+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>GixSQL: Mid-November update</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gixsql-mid-november-update.html"/>
+        <id>https://mridoni.github.io/gixsql-mid-november-update.html</id>
+
+        <updated>2022-11-16T18:14:40+01:00</updated>
+            <summary>
+                <![CDATA[
+                    GixSQL is undergoing some work to re-implement two features: autocommit support and updatable cursors. Both of them have been there since the first releases, but due to several reasons (essentially lack of usage and bad assumptions) they were left behind and their functionality, in their current incarnation, is doubtful. The new implementation sees these two features being moved mainly from the main library (libgixsql) to the database driver libraries (e.g. libgixsql-pgsql), with only a few&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>GixSQL is undergoing some work to re-implement two features: autocommit support and updatable cursors. Both of them have been there since the first releases, but due to several reasons (essentially lack of usage and bad assumptions) they were left behind and their functionality, in their current incarnation, is doubtful.</p>
+<p>The new implementation sees these two features being moved mainly from the main library (libgixsql) to the database driver libraries (e.g. libgixsql-pgsql), with only a few parameters passed around. The rationale behind this move is that different DBMSs behave in different ways, and trying to keep a unified approach would only lead to confusion (and bugs, a lot of bugs). What follows is the level of support planned for the various DB drivers.</p>
+<h4>Autocommit</h4>
+<p>Autocommit will basically work in three different modes:</p>
+<ul>
+<li>Native: the connection will start in the default mode used by the database</li>
+<li>On: a <code>COMMIT </code>will be executed after each successful statement</li>
+<li>Off: the connection will start by opening a transaction. A new connection will be started after each <code>COMMIT </code>and <code>ROLLBACK</code></li>
+</ul>
+<p>Driver notes:</p>
+<ul>
+<li>MySQL and ODBC (through its own drivers) directly support autocommit to be turned on or off, so the handling of this feature will be passed entirely to the native driver (e.g. libmysqlclient)</li>
+<li>Oracle has no concept of autocommit, just as PostgreSQL, but the first one always work in transaction mode, while transactions must be explicitly started in PostgreSQL. While autocommit (or "transaction mode" in the case of PostgreSQL) have been - and will further be - tested, these differences (and the ones above) can probably lead to different behaviours when switching a single codebase that makes heavy use of the autocommit feature to a different DB, if precautions are not taken and tests performed.</li>
+</ul>
+<h4>Updatable cursors</h4>
+<p>Updatable cursors will allow the update/deletion of a single cursor row after a fetch, using the clause <code>UPDATE...WHERE CURRENT OF mycursor </code>after a cursor has been opened <code>FOR UPDATE</code>.</p>
+<p>Driver notes:</p>
+<ul>
+<li>Oracle directly supports updatable cursors, so the handling of this feature will be passed entirely to the native driver.</li>
+<li>PostgreSQL directly supports updatable cursors when native cursors are enabled - this is the default - in the GixSQL driver (libgixsql-pgsql); in this case the handling of this feature will be passed entirely to the native driver. If cursors are emulated in PostgreSQL, updatable cursors are not available.</li>
+<li>MySQL and SQLite have updatable cursor emulation: the table on which the cursor is opened must have a unique key that will be used for the update. This has been proven to work, but it is obviously (a lot) slower than native support.</li>
+<li>ODBC will defer updatable cursor handling to its own drivers: it depends on them whether updatable cursors will be available or not. As a side note the ODBC driver for MySQL (MySQL Connector/ODBC) uses the same technique illustrated above to emulate updatable cursors.</li>
+</ul>
+<p>While this is the focus of what will be v1.0.19 (some prereleases will surely be published before that) there will be the usual amount of bug fixes and, where possible, smaller features.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Gix-IDE v1.1.0dev1 (pre-release) is out</title>
         <author>
@@ -341,28 +384,6 @@
 <li>Fixed COMP-3 handling in drivers other than PostgreSQL</li>
 <li>Rewrote the test suite (still MSTest-based) to dynamically generate a matrix of test to be run on the various platforms/database drivers</li>
 </ul>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Gix-IDE: the standalone debugger</title>
-        <author>
-            <name>Marco Ridoni</name>
-        </author>
-        <link href="https://mridoni.github.io/gix-ide-the-standalone-debugger.html"/>
-        <id>https://mridoni.github.io/gix-ide-the-standalone-debugger.html</id>
-
-        <updated>2022-08-12T18:12:54+02:00</updated>
-            <summary>
-                <![CDATA[
-                    The "standalone debugger" for Gix-IDE is almost here. Preliminary tests are going very well, and while I cannot give a firm release date, a pre-release (Windows only at first) should be coming in September. The new debugger will at first have more or less the same feature set of the old one, but the new architecture will allow in the future things as remote debugging and cross-architecture debugging (i.e. debugging x86 code on x64 platform).
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>The "standalone debugger" for Gix-IDE is almost here. Preliminary tests are going very well, and while I cannot give a firm release date, a pre-release (Windows only at first) should be coming in September.</p>
-<p>The new debugger will at first have more or less the same feature set of the old one, but the new architecture will allow in the future things as remote debugging and cross-architecture debugging (i.e. debugging x86 code on x64 platform).</p>
-<p>The debug clients (including obviously Gix-IDE) will connect using a standard client library, and it will be possible to write a client from scratch or incorporate the debug client library into existing tools (I am writing a minimal text-based client to simplify testing the library).</p>
             ]]>
         </content>
     </entry>
