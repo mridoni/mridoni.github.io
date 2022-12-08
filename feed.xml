@@ -3,12 +3,55 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-12-07T17:27:27+01:00</updated>
+    <updated>2022-12-08T11:58:44+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>Gix-IDE: December update</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gix-ide-early-december-update.html"/>
+        <id>https://mridoni.github.io/gix-ide-early-december-update.html</id>
+
+        <updated>2022-12-08T11:58:44+01:00</updated>
+            <summary>
+                <![CDATA[
+                    In the last few days I have committed several improvements and fixes to GitHub. New features and fixes Known bugs and issues All of this will be part of a v1.1.1 release that should be available after the necessary testing phase, probably in a week or two, surely before the Christmas holidays. As usual, donations or sponsors are welcome.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>In the last few days I have committed several improvements and fixes to GitHub.</p>
+<p><strong>New features and fixes</strong></p>
+<ul>
+<li>An "Error List" window has been added, to display build errors and warnings. When double-clicking an error message, the editor will switch to the file and line indicated.</li>
+<li>The output window was split into different panes ("IDE", "Build" and "Debug", for now) so that the output of different subsystem can be routed in a proper way and be less confusing. This should fix issue #113 and #126, or at least be a rather big step in that direction.</li>
+<li>The logging system in the IDE is now based on <a href="https://github.com/gabime/spdlog" target="_blank" rel="noopener noreferrer">spdlog</a>, QLogger usage is confined (for now) to <code>gix-http</code>.</li>
+<li>Metadata management has been fixed and made faster.</li>
+<li>The build system received a few fixes. Multi-binary projects now work correctly (this should also solve #112).</li>
+<li>Filename tooltips have been added to the editor tabs</li>
+<li>Files can now be also dragged onto project folders, not just on the projects themselves</li>
+<li>The Windows installers do not need administrative rights anymore. If a non-administrative user chooses to install a MSVC-based version of GnuCOBOL, a warning will be displayed (Visual Studio 2022 C++ Build Tools need administrative rights to be installed, no way around that). The user can choose whether to go back or to continue. If the latter option is chosen, the customary rights elevation prompt will be displayed when trying to install the Visual Studio 2022 C++ Build Tools.</li>
+<li>Fixed ESQL parameter-style setting in the IDE (now it is possible to set the corect parameter style/prefix).</li>
+<li>Added an option in the IDE that maps to GixSQL's "consolidate source" (i.e. stitch all module sources/COPY files together before preprocessing). This is needed in some scenarios to properly parse metadata.</li>
+<li>Fixed a possible crash in the logging system</li>
+<li><code>gix-http </code>was inadvertently deactivated in the build configuration, now it is built again by default</li>
+</ul>
+<p><strong>Known bugs and issues</strong></p>
+<ul>
+<li>The new Output/Error windows still have some small quirks (some messages not being displayed, UI glitches, etc.). I hope to solve them before the release, but since tyhe new logging/output system is a massive improvement over the older one and the way to go, it will be shipped anyway.</li>
+<li>I still have not decided whether to install "in place" the MSVC runtime files for GixSQL runtime libraries. While not a big issue for the GixSQL version shipped with Gix-IDE, this might have an adverse effect on production systems where an updated MSVC runtime is available and regularly updated at system level.</li>
+</ul>
+<p>All of this will be part of a v1.1.1 release that should be available after the necessary testing phase, probably in a week or two, surely before the Christmas holidays.</p>
+<p>As usual, <a href="https://paypal.me/mridoni" target="_blank" rel="noopener noreferrer">donations </a>or <a href="https://github.com/sponsors/mridoni" target="_blank" rel="noopener noreferrer">sponsors</a> are welcome.</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Gix-IDE 1.1.0 is available</title>
         <author>
@@ -325,32 +368,6 @@
 <li>Release new Linux packages for different distributions (at least Ubuntu 20.04 + 22, Debian 10 + 11, possibly Fedora 35/36) </li>
 <li>The point above implies using the distribution-provided version of Qt. Since this, on a few distributions, includes Qt 6, the next logical step will be moving the primary target to Qt 6 and leaving Qt 5 - if possible - as a secondary option for older platforms. Obviously this will take some time.<br><br>Sorry for the delays but integrating the new debugger into Gix-IDE is/was a long process that needed a break in the development/release, since too many things changed to perform a clean merge between the two versions and maintaining them separate and up-to-date was simply too much work. After the obstacles above are cleared, development should proceed in a quicker way.<br><br><br></li>
 </ul>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>What is coming for Gix-IDE and GixSQL</title>
-        <author>
-            <name>Marco Ridoni</name>
-        </author>
-        <link href="https://mridoni.github.io/what-is-coming-for-gix-ide-and-gixsql.html"/>
-        <id>https://mridoni.github.io/what-is-coming-for-gix-ide-and-gixsql.html</id>
-
-        <updated>2022-09-21T09:15:45+02:00</updated>
-            <summary>
-                <![CDATA[
-                    I am taking a brief pause (i.e. vacation) in the next couple of weeks but I didn't want to leave before giving a few notes about the next steps. See you soon.
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>I am taking a brief pause (i.e. vacation) in the next couple of weeks but I didn't want to leave before giving a few notes about the next steps.</p>
-<ul>
-<li>The new debugger for Gix-IDE is at the point where it can be integrated into the main branch. The next version will have the possibility to choose between the current (named "standard") debugger and the "experimental" one. At first I thought of shipping the two versions in parallel for some time, but this proved unfeasible: too many things changed between the two versions of Gix-IDE and keeping them in sync - for stuff that is not debugger-related - is simply too much work. Of course this "fusion" (it's the internal name of the branch I am working on) in turn led to a lot of changes that need to be tested, together with several changes in building and packaging. This means that the "fusion" pre-release will have to wait a few weeks, until I am satisfied that the standard debugger keeps working as it should, but from that moment on, adding features and fixing things should be much easier.</li>
-<li>I am switching the building and packaging process for binary packages to GitHub Actions. It will also take some time for the new release pipeline to reach a certain level of stability and to abandon the old process, but this will make releasing new and "ad interim" versions easier and quicker, and also more reproducible, especially for Windows builds.</li>
-<li>GixSQL development will advance in two main directions: 1) the "autocommit" feature needs to be reviewed and (probably) fixed for all drivers. 2) updatable cursor support needs to be improved (or, in some cases/drivers, implemented). There is also space for making progress in areas like memory usage, logging, automated testing, refactoring, etc. and, of course, for the usual amount of bug-fixing and parser modifications (thanks, as usual, to Simon Sobisch, whose support has been invaluable).</li>
-</ul>
-<p>See you soon.</p>
             ]]>
         </content>
     </entry>

@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://mridoni.github.io/gix-ide-early-december-update.html",
+            "url": "https://mridoni.github.io/gix-ide-early-december-update.html",
+            "title": "Gix-IDE: December update",
+            "summary": "In the last few days I have committed several improvements and fixes to GitHub. New features and fixes Known bugs and issues All of this will be part of a v1.1.1 release that should be available after the necessary testing phase, probably in a week or two, surely before the Christmas holidays. As usual, donations or sponsors are welcome.",
+            "content_html": "<p>In the last few days I have committed several improvements and fixes to GitHub.</p>\n<p><strong>New features and fixes</strong></p>\n<ul>\n<li>An \"Error List\" window has been added, to display build errors and warnings. When double-clicking an error message, the editor will switch to the file and line indicated.</li>\n<li>The output window was split into different panes (\"IDE\", \"Build\" and \"Debug\", for now) so that the output of different subsystem can be routed in a proper way and be less confusing. This should fix issue #113 and #126, or at least be a rather big step in that direction.</li>\n<li>The logging system in the IDE is now based on <a href=\"https://github.com/gabime/spdlog\" target=\"_blank\" rel=\"noopener noreferrer\">spdlog</a>, QLogger usage is confined (for now) to <code>gix-http</code>.</li>\n<li>Metadata management has been fixed and made faster.</li>\n<li>The build system received a few fixes. Multi-binary projects now work correctly (this should also solve #112).</li>\n<li>Filename tooltips have been added to the editor tabs</li>\n<li>Files can now be also dragged onto project folders, not just on the projects themselves</li>\n<li>The Windows installers do not need administrative rights anymore. If a non-administrative user chooses to install a MSVC-based version of GnuCOBOL, a warning will be displayed (Visual Studio 2022 C++ Build Tools need administrative rights to be installed, no way around that). The user can choose whether to go back or to continue. If the latter option is chosen, the customary rights elevation prompt will be displayed when trying to install the Visual Studio 2022 C++ Build Tools.</li>\n<li>Fixed ESQL parameter-style setting in the IDE (now it is possible to set the corect parameter style/prefix).</li>\n<li>Added an option in the IDE that maps to GixSQL's \"consolidate source\" (i.e. stitch all module sources/COPY files together before preprocessing). This is needed in some scenarios to properly parse metadata.</li>\n<li>Fixed a possible crash in the logging system</li>\n<li><code>gix-http </code>was inadvertently deactivated in the build configuration, now it is built again by default</li>\n</ul>\n<p><strong>Known bugs and issues</strong></p>\n<ul>\n<li>The new Output/Error windows still have some small quirks (some messages not being displayed, UI glitches, etc.). I hope to solve them before the release, but since tyhe new logging/output system is a massive improvement over the older one and the way to go, it will be shipped anyway.</li>\n<li>I still have not decided whether to install \"in place\" the MSVC runtime files for GixSQL runtime libraries. While not a big issue for the GixSQL version shipped with Gix-IDE, this might have an adverse effect on production systems where an updated MSVC runtime is available and regularly updated at system level.</li>\n</ul>\n<p>All of this will be part of a v1.1.1 release that should be available after the necessary testing phase, probably in a week or two, surely before the Christmas holidays.</p>\n<p>As usual, <a href=\"https://paypal.me/mridoni\" target=\"_blank\" rel=\"noopener noreferrer\">donations </a>or <a href=\"https://github.com/sponsors/mridoni\" target=\"_blank\" rel=\"noopener noreferrer\">sponsors</a> are welcome.</p>\n<p> </p>",
+            "author": {
+                "name": "Marco Ridoni"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-12-08T11:49:45+01:00",
+            "date_modified": "2022-12-08T11:58:44+01:00"
+        },
+        {
             "id": "https://mridoni.github.io/gix-ide-110-is-available.html",
             "url": "https://mridoni.github.io/gix-ide-110-is-available.html",
             "title": "Gix-IDE 1.1.0 is available",
@@ -134,20 +148,6 @@
             ],
             "date_published": "2022-10-11T10:32:06+02:00",
             "date_modified": "2022-10-11T11:31:56+02:00"
-        },
-        {
-            "id": "https://mridoni.github.io/what-is-coming-for-gix-ide-and-gixsql.html",
-            "url": "https://mridoni.github.io/what-is-coming-for-gix-ide-and-gixsql.html",
-            "title": "What is coming for Gix-IDE and GixSQL",
-            "summary": "I am taking a brief pause (i.e. vacation) in the next couple of weeks but I didn't want to leave before giving a few notes about the next steps. See you soon.",
-            "content_html": "<p>I am taking a brief pause (i.e. vacation) in the next couple of weeks but I didn't want to leave before giving a few notes about the next steps.</p>\n<ul>\n<li>The new debugger for Gix-IDE is at the point where it can be integrated into the main branch. The next version will have the possibility to choose between the current (named \"standard\") debugger and the \"experimental\" one. At first I thought of shipping the two versions in parallel for some time, but this proved unfeasible: too many things changed between the two versions of Gix-IDE and keeping them in sync - for stuff that is not debugger-related - is simply too much work. Of course this \"fusion\" (it's the internal name of the branch I am working on) in turn led to a lot of changes that need to be tested, together with several changes in building and packaging. This means that the \"fusion\" pre-release will have to wait a few weeks, until I am satisfied that the standard debugger keeps working as it should, but from that moment on, adding features and fixing things should be much easier.</li>\n<li>I am switching the building and packaging process for binary packages to GitHub Actions. It will also take some time for the new release pipeline to reach a certain level of stability and to abandon the old process, but this will make releasing new and \"ad interim\" versions easier and quicker, and also more reproducible, especially for Windows builds.</li>\n<li>GixSQL development will advance in two main directions: 1) the \"autocommit\" feature needs to be reviewed and (probably) fixed for all drivers. 2) updatable cursor support needs to be improved (or, in some cases/drivers, implemented). There is also space for making progress in areas like memory usage, logging, automated testing, refactoring, etc. and, of course, for the usual amount of bug-fixing and parser modifications (thanks, as usual, to Simon Sobisch, whose support has been invaluable).</li>\n</ul>\n<p>See you soon.</p>",
-            "author": {
-                "name": "Marco Ridoni"
-            },
-            "tags": [
-            ],
-            "date_published": "2022-09-20T19:50:27+02:00",
-            "date_modified": "2022-09-21T09:15:45+02:00"
         }
     ]
 }
