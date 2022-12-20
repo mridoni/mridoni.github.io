@@ -3,12 +3,70 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-12-08T11:58:44+01:00</updated>
+    <updated>2022-12-19T15:11:24+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>Gix-IDE v1.1.1 is out</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gix-ide-v111-is-out.html"/>
+        <id>https://mridoni.github.io/gix-ide-v111-is-out.html</id>
+
+        <updated>2022-12-19T15:11:24+01:00</updated>
+            <summary>
+                <![CDATA[
+                    This is a release for Gix-IDE that improves on 1.1.1 and fixes a few problems. The "standard" debugger is still the recommended one, but the "experimental" version is functional both on Windows and Linux. This release also arrives with new binary packages for Debian 10 and 11. Binary packages available A summary of new features and fixes Known bugs and issues Available, as usual, on the Release page on GitHub. As usual, donations or sponsors are welcome.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>This is a release for Gix-IDE that improves on 1.1.1 and fixes a few problems. The "standard" debugger is still the recommended one, but the "experimental" version is functional both on Windows and Linux.</p>
+<p>This release also arrives with new binary packages for Debian 10 and 11.</p>
+<p><strong>Binary packages available</strong></p>
+<ul>
+<li>Windows x86</li>
+<li>Windows x64</li>
+<li>Linux x64 (Ubuntu 20.04LTS)</li>
+<li>Linux x64 (Ubuntu 22.04LTS)</li>
+<li>Linux x64 (Debian 10)</li>
+<li>Linux x64 (Debian 11)</li>
+</ul>
+<p><strong>A summary of new features and fixes</strong></p>
+<ul>
+<li>The IDE logging system is now based on spdlog</li>
+<li>The output window has been split into different panes</li>
+<li>Added clickable "Error List" window</li>
+<li>Linux debugger fixes</li>
+<li>Added packages for Debian 10 and 11</li>
+<li>The Linux version can now automatically use a distribution-provided install of GnuCOBOL</li>
+<li>Fixed a linking problem for GixSQL when used with a MinGW compiler from the IDE</li>
+<li>Fixed ESQL sample project</li>
+<li>On Windows the user can now decide whether to install the MSVC runtime locally or globally</li>
+<li>The Windows installer does not require administrative privileges anymore (still needed for VC++ Build Tools)</li>
+<li>Removed some test-related dead code</li>
+<li>In the IDE, files can now be dragged and dropped on a project folder</li>
+<li>Added filename tooltips on editor tabs</li>
+<li>On Linux the correct scaling factor is now used on a fresh install</li>
+<li>Internal fixes in GixSQL for metadata handling</li>
+<li>Fixed ESQL parameter-style setting in the IDE (now it is possible to set the corect parameter style/prefix).</li>
+<li>Added an option in the IDE that maps to GixSQL's "consolidate source" (i.e. stitch all module sources/COPY files together before preprocessing). This is needed in some scenarios to properly parse metadata.</li>
+<li>Fixed a possible crash in the logging system</li>
+<li>gix-http was inadvertently deactivated in the build configuration, now it is built again by default</li>
+</ul>
+<p><strong>Known bugs and issues</strong></p>
+<ul>
+<li>The new Output/Error windows still have some small quirks (some messages not being displayed, UI glitches, etc.).</li>
+</ul>
+<p>Available, as usual, on the <a href="https://github.com/mridoni/gix/releases/tag/v1.1.0" target="_blank" rel="noopener noreferrer">Release page</a> on GitHub.</p>
+<p>As usual, <a href="https://paypal.me/mridoni" target="_blank" rel="noopener noreferrer">donations </a>or <a href="https://github.com/sponsors/mridoni" target="_blank" rel="noopener noreferrer">sponsors</a> are welcome.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Gix-IDE: December update</title>
         <author>
@@ -17,7 +75,7 @@
         <link href="https://mridoni.github.io/gix-ide-early-december-update.html"/>
         <id>https://mridoni.github.io/gix-ide-early-december-update.html</id>
 
-        <updated>2022-12-08T11:58:44+01:00</updated>
+        <updated>2022-12-19T15:08:08+01:00</updated>
             <summary>
                 <![CDATA[
                     In the last few days I have committed several improvements and fixes to GitHub. New features and fixes Known bugs and issues All of this will be part of a v1.1.1 release that should be available after the necessary testing phase, probably in a week or two, surely before the Christmas holidays. As usual, donations or sponsors are welcome.
@@ -43,7 +101,7 @@
 </ul>
 <p><strong>Known bugs and issues</strong></p>
 <ul>
-<li>The new Output/Error windows still have some small quirks (some messages not being displayed, UI glitches, etc.). I hope to solve them before the release, but since tyhe new logging/output system is a massive improvement over the older one and the way to go, it will be shipped anyway.</li>
+<li>The new Output/Error windows still have some small quirks (some messages not being displayed, UI glitches, etc.). I hope to solve them before the release, but since the new logging/output system is a massive improvement over the older one and the way to go, it will be shipped anyway.</li>
 <li>I still have not decided whether to install "in place" the MSVC runtime files for GixSQL runtime libraries. While not a big issue for the GixSQL version shipped with Gix-IDE, this might have an adverse effect on production systems where an updated MSVC runtime is available and regularly updated at system level.</li>
 </ul>
 <p>All of this will be part of a v1.1.1 release that should be available after the necessary testing phase, probably in a week or two, surely before the Christmas holidays.</p>
@@ -340,34 +398,6 @@
 <li>binary packages will be released from the new build/packaging system</li>
 </ul>
 <p>For the more adventurous of you: the "new-debugger" branch is already usable and should compile (almost) without problems, but your mileage, as usual, may vary.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Mid-October update</title>
-        <author>
-            <name>Marco Ridoni</name>
-        </author>
-        <link href="https://mridoni.github.io/mid-october-update.html"/>
-        <id>https://mridoni.github.io/mid-october-update.html</id>
-
-        <updated>2022-10-11T11:31:56+02:00</updated>
-            <summary>
-                <![CDATA[
-                    I am back and I am continuing to review and modify the build process, a few packaging/build related issues should be solved as soon as the next release is out. Due to work-related constraints I cannot give (for now) a solid timeframe, but I hope to have a pre-release in a couple of weeks, maybe a partial one earlier. The goals are: Release a version that contains the new ("experimental") debugger but also ships the&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p><br>I am back and I am continuing to review and modify the build process, a few packaging/build related issues should be solved as soon as the next release is out. Due to work-related constraints I cannot give (for now) a solid timeframe, but I hope to have a pre-release in a couple of weeks, maybe a partial one earlier.</p>
-<p>The goals are:</p>
-<ul>
-<li>Release a version that contains the new ("experimental") debugger but also ships the "standard" one, that will be - for a hopefully short time - the version to be still normally used</li>
-<li>Release a packaged version for Windows from the new build system (using GitHub actions)</li>
-<li>Include, where possible/desired, versions of GnuCOBOL built with a standard process (also using GitHub actions)</li>
-<li>Release new Linux packages for different distributions (at least Ubuntu 20.04 + 22, Debian 10 + 11, possibly Fedora 35/36) </li>
-<li>The point above implies using the distribution-provided version of Qt. Since this, on a few distributions, includes Qt 6, the next logical step will be moving the primary target to Qt 6 and leaving Qt 5 - if possible - as a secondary option for older platforms. Obviously this will take some time.<br><br>Sorry for the delays but integrating the new debugger into Gix-IDE is/was a long process that needed a break in the development/release, since too many things changed to perform a clean merge between the two versions and maintaining them separate and up-to-date was simply too much work. After the obstacles above are cleared, development should proceed in a quicker way.<br><br><br></li>
-</ul>
             ]]>
         </content>
     </entry>
