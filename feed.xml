@@ -3,12 +3,37 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2022-12-19T15:11:24+01:00</updated>
+    <updated>2023-01-03T18:11:30+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>January update</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/january-update.html"/>
+        <id>https://mridoni.github.io/january-update.html</id>
+
+        <updated>2023-01-03T18:11:30+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Happy New Year! The work on GixSQL is progressing and v1.0.20 is on the operating table (or on the assembly line, depending on your metaphor of choice). I have pushed the corresponding branch on GitHub and I am updating it regularly. GixSQL v1.0.20 will see not only new features and fixes, but also a notable number of modifications to improve memory usage and reliability: the codebase has been almost totally moved from its C origins&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Happy New Year! The work on GixSQL is progressing and v1.0.20 is on the operating table (or on the assembly line, depending on your metaphor of choice). I have pushed the corresponding <a href="https://github.com/mridoni/gixsql/tree/v1.0.20dev" target="_blank" rel="noopener noreferrer">branch on GitHub</a> and I am updating it regularly.</p>
+<p>GixSQL v1.0.20 will see not only new features and fixes, but also a notable number of modifications to improve memory usage and reliability: the codebase has been almost totally moved from its C origins and migrated (sort of) to more modern C++ constructs.</p>
+<p>The test suite has been modified and, being written in C#/.Net Core, can also be easily run on Linux. The corresponding documentation on how to use and extend it will be provided in the release. Moreover, the test suite can also be run in GitHub Actions (or locally with <a href="https://github.com/nektos/act" target="_blank" rel="noopener noreferrer">ACT</a>) and provides a hook to run the tests under Valgrind (on LInux) or DrMemory (on Windows).</p>
+<p>I still have not set a release date or an ETA for the <a href="https://github.com/mridoni/gixsql/milestone/1" target="_blank" rel="noopener noreferrer">v1.0.20 milestone</a>, it will reasonably take me a couple more weeks - barring unforeseen problems and work commitments - to see how the work is going and give an estimate; I simply don't want to say "X weeks" when it is going to take "Y".</p>
+<p>You can check the current progress on the <a href="https://github.com/mridoni/gixsql/milestone/1" target="_blank" rel="noopener noreferrer">v1.0.20 milestone page</a>: issues that are technically "closed" in the branch but still open for some reason (mainly the need for more tests or the fact that they will need some modification along the line due to the integration of the code for a different issue) are marked as "ready".</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Gix-IDE v1.1.1 is out</title>
         <author>
@@ -371,33 +396,6 @@
 <li>Merged pull request <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1402670500" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/127" data-hovercard-type="pull_request" data-hovercard-url="/mridoni/gixsql/pull/127/hovercard" href="https://github.com/mridoni/gixsql/pull/127">#127</a> (thanks to Simon Sobisch)</li>
 </ul>
 <p>All the binary packages are available, as usual, on the corresponding <a href="https://github.com/mridoni/gixsql/releases/tag/v1.0.18b" target="_blank" rel="noopener noreferrer">Release page on GitHub</a>.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>October progress update</title>
-        <author>
-            <name>Marco Ridoni</name>
-        </author>
-        <link href="https://mridoni.github.io/october-progress-update.html"/>
-        <id>https://mridoni.github.io/october-progress-update.html</id>
-
-        <updated>2022-10-24T13:05:06+02:00</updated>
-            <summary>
-                <![CDATA[
-                    GixSQL v1.0.18b (still a pre-release - or ad interim if you prefer) is almost ready and should be out in a couple of days at most. As I am writing this, the packages are being built and, after some testing, will be published on GitHub. Then the work will start on v1.0.19. GixSQL v1.0.18b will include solutions for issues #119, #88 and PR #127 (thanks to Simon Sobisch for that). The new build/packaging process (based&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>GixSQL v1.0.18b (still a pre-release - or <em>ad interim</em> if you prefer) is almost ready and should be out in a couple of days at most. As I am writing this, the packages are being built and, after some testing, will be published on GitHub. Then the work will start on v1.0.19. GixSQL v1.0.18b will include solutions for issues <a href="https://github.com/mridoni/gixsql/issues/119" target="_blank" rel="noopener noreferrer">#119</a>, <a href="https://github.com/mridoni/gixsql/issues/88" target="_blank" rel="noopener noreferrer">#88</a> and PR <a href="https://github.com/mridoni/gixsql/issues/127" target="_blank" rel="noopener noreferrer">#127</a> (thanks to Simon Sobisch for that).</p>
-<p>The new build/packaging process (based on GitHub Actions) is going well, and should be ready for a pre-release in a couple of weeks at most, maybe less. As some of you may have noticed, a new branch (named "new-debugger") has debuted on Gix-IDE's repository. When everything is ready:</p>
-<ul>
-<li>the "new-debugger" branch will be merged into the main branch</li>
-<li>the workflow files for Github Actions will be adjusted and made public</li>
-<li>binary packages will be released from the new build/packaging system</li>
-</ul>
-<p>For the more adventurous of you: the "new-debugger" branch is already usable and should compile (almost) without problems, but your mileage, as usual, may vary.</p>
             ]]>
         </content>
     </entry>
