@@ -3,12 +3,54 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2023-01-03T18:11:30+01:00</updated>
+    <updated>2023-02-01T19:53:37+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>GixSQL v1.0.20dev1 is out</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gixsql-v1020dev1-is-out.html"/>
+        <id>https://mridoni.github.io/gixsql-v1020dev1-is-out.html</id>
+
+        <updated>2023-02-01T19:53:37+01:00</updated>
+            <summary>
+                <![CDATA[
+                    It took a bit more than expected, but GixSQL v1.0.20dev1 is finally out. Though being labeled as a "dev" release, it is almost final. I am releasing it to shake down a few possible bugs before the proper v1.0.20 release that, barring any showstopper bug I didn't catch, should come in a few days. This version brings, among the other fixes, a lot of internal changes that have eliminated some memory leaks and should make&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>It took a bit more than expected, but GixSQL v1.0.20dev1 is finally out. Though being labeled as a "dev" release, it is almost final. I am releasing it to shake down a few possible bugs before the proper v1.0.20 release that, barring any showstopper bug I didn't catch, should come in a few days.</p>
+<p>This version brings, among the other fixes, a lot of internal changes that have eliminated some memory leaks and should make the runtime libraries in general more stable and less memory-hungry. A complete list of the features and fixes contained in this release follows.</p>
+<ul>
+<li>Fixed "re-align COBOL_TYPE_UNSIGNED_BINARY code to use switch ready" (#136)</li>
+<li>Fixed "SIGSEGV on cursor close" (#135)</li>
+<li>Fixed "change SqlVar::type to enum enhancement New feature or request" (#124)<br>Fixed "testsuite adjustments - running with analyzers / code instrumentation" (#122)</li>
+<li>Fixed "FR for USAGE VARRAW alias to VARYING" (#120)</li>
+<li>Fixed "leak in dbi-&gt;fetch_one and potentially other places" (#111)</li>
+<li>Fixed "Return more details on the actual error instead of "invalid column data"" (#109)</li>
+<li>Fixed "FR gixpp option handling: add alias for source basename" (#53)</li>
+<li>Modified scanner/parser to improve handling of subqueries</li>
+<li>Added Debian 10/11 binary packages</li>
+<li>Added GitHub Actions workflow for easier testing</li>
+<li>The test suite is now documented</li>
+<li>SQLCA is now set on success (PR #137 by Simon Sobisch)</li>
+<li>The <code>gixsql</code> wrapper now uses the correct directory for SQLCA (PR #134 by Simon Sobisch)</li>
+</ul>
+<p><strong>Known issues</strong></p>
+<ul>
+<li>The Windows installers do not allow to select how (or if) the Microsoft VC++ runtime should be installed. This feature, already included in the installer for Gix-IDE, will ship with the final version of v1.0.20.</li>
+</ul>
+<p>Available, as usual, on the <a href="https://github.com/mridoni/gixsql/releases/tag/v1.0.20dev1" target="_blank" rel="noopener noreferrer">Release page</a> on GitHub.</p>
+<p>As usual, <a href="https://paypal.me/mridoni" target="_blank" rel="noopener noreferrer">donations </a>or <a href="https://github.com/sponsors/mridoni" target="_blank" rel="noopener noreferrer">sponsors</a> are welcome.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>January update</title>
         <author>
@@ -17,7 +59,7 @@
         <link href="https://mridoni.github.io/january-update.html"/>
         <id>https://mridoni.github.io/january-update.html</id>
 
-        <updated>2023-01-03T18:11:30+01:00</updated>
+        <updated>2023-02-01T10:45:52+01:00</updated>
             <summary>
                 <![CDATA[
                     Happy New Year! The work on GixSQL is progressing and v1.0.20 is on the operating table (or on the assembly line, depending on your metaphor of choice). I have pushed the corresponding branch on GitHub and I am updating it regularly. GixSQL v1.0.20 will see not only new features and fixes, but also a notable number of modifications to improve memory usage and reliability: the codebase has been almost totally moved from its C origins&hellip;
@@ -359,43 +401,6 @@
 <p>The packaging process is almost complete: the workflows included in the repository can already be used to build the binary packages, but there are still a few details I want to iron out before distributing the packages: this will still be a pre-release and it's a milestone that will help me to streamline the development process, but obviously I would like it to push it out without major bugs or blocking issues.</p>
 <p>The Windows binary packages will also be signed, for the first time, with a code signing certificate. I really dislike the practices that seem rampant in the "security industry", with prices that seem to bear no relation to the actual product <span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">b</span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">eing sold </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">(including the identity verification, not just the certificate). </span>Nevertheless, since Gix-IDE is not-so-easy to build and package for ordinary users, and the SmartScreen alert on Windows had some people justifiably worried, I decided to bite the bullet.</p>
 <p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Side note: I sincerely hope that someone at SigStore (and Microsoft) comes to the realization that software does not mean only containers and images but also old-fashioned software packages. To be clear: SigStore is great but, in my very own opinion, its lack of attention (so far) towards a great part of the computing world, apart from making it useless in many cases, is a disappointment.</span></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>GixSQL v1.0.18b is out</title>
-        <author>
-            <name>Marco Ridoni</name>
-        </author>
-        <link href="https://mridoni.github.io/gixsql-v1018b-is-out.html"/>
-        <id>https://mridoni.github.io/gixsql-v1018b-is-out.html</id>
-
-        <updated>2022-10-27T17:49:28+02:00</updated>
-            <summary>
-                <![CDATA[
-                    This is a "hotfix" release for GixSQL, that fixes a few issues. Available binary packages: There is also a autoconf-enabled source package, to make building on Linux and MinGW easier. A summary of new features and fixes: All the binary packages are available, as usual, on the corresponding Release page on GitHub.
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>This is a "hotfix" release for GixSQL, that fixes a few issues. </p>
-<p>Available binary packages:</p>
-<ul>
-<li>Windows x64 (MSVC + MinGW)</li>
-<li>Windows x64 (MinGW only)</li>
-<li>Windows x86 (MSVC + MinGW)</li>
-<li>Windows x86 (MinGW only)</li>
-<li>Windows x86 "portable"</li>
-<li>Linux x64 (Ubuntu 20.04)</li>
-</ul>
-<p>There is also a autoconf-enabled source package, to make building on Linux and MinGW easier.</p>
-<p>A summary of new features and fixes:</p>
-<ul>
-<li>Changed cursor initialization (should fix <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1295941001" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/88" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/88/hovercard" href="https://github.com/mridoni/gixsql/issues/88">#88</a>)</li>
-<li>Fix for "1.0.17/1.0.18 regression: COMMIT and ROLLBACK delete all cursor definitions -&gt; Status -111" (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1355475097" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/119" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/119/hovercard" href="https://github.com/mridoni/gixsql/issues/119">#119</a>)</li>
-<li>Merged pull request <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1402670500" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/127" data-hovercard-type="pull_request" data-hovercard-url="/mridoni/gixsql/pull/127/hovercard" href="https://github.com/mridoni/gixsql/pull/127">#127</a> (thanks to Simon Sobisch)</li>
-</ul>
-<p>All the binary packages are available, as usual, on the corresponding <a href="https://github.com/mridoni/gixsql/releases/tag/v1.0.18b" target="_blank" rel="noopener noreferrer">Release page on GitHub</a>.</p>
             ]]>
         </content>
     </entry>
