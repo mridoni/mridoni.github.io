@@ -3,12 +3,52 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2023-02-01T19:53:37+01:00</updated>
+    <updated>2023-02-09T20:09:22+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
     <id>https://mridoni.github.io</id>
 
+    <entry>
+        <title>GixSQL v1.0.20 &quot;final&quot; is out</title>
+        <author>
+            <name>Marco Ridoni</name>
+        </author>
+        <link href="https://mridoni.github.io/gixsql-v1020dev1-is-out-2.html"/>
+        <id>https://mridoni.github.io/gixsql-v1020dev1-is-out-2.html</id>
+
+        <updated>2023-02-09T20:09:22+01:00</updated>
+            <summary>
+                <![CDATA[
+                    GixSQL v1.0.20 has been published in its final form. This version brings, among the other fixes, a lot of internal changes that have eliminated some memory leaks and should make the runtime libraries in general more stable and less memory-hungry. A complete list of the features and fixes contained in this release follows. Available, as usual, on the Release page on GitHub. As usual, donations or sponsors are welcome.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>GixSQL v1.0.20 has been published in its final form.</p>
+<p>This version brings, among the other fixes, a lot of internal changes that have eliminated some memory leaks and should make the runtime libraries in general more stable and less memory-hungry. A complete list of the features and fixes contained in this release follows.</p>
+<ul>
+<li>Fixed "re-align COBOL_TYPE_UNSIGNED_BINARY code to use switch ready" (<a aria-label="Issue #136" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1514458347" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/136" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/136/hovercard" href="https://github.com/mridoni/gixsql/issues/136">#136</a>)</li>
+<li>Fixed "SIGSEGV on cursor close" (<a aria-label="Issue #135" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1509022019" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/135" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/135/hovercard" href="https://github.com/mridoni/gixsql/issues/135">#135</a>)</li>
+<li>Fixed "change SqlVar::type to enum enhancement New feature or request" (<a aria-label="Issue #124" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1357397888" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/124" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/124/hovercard" href="https://github.com/mridoni/gixsql/issues/124">#124</a>)</li>
+<li>Fixed "testsuite adjustments - running with analyzers / code instrumentation" (<a aria-label="Issue #122" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1357258574" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/122" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/122/hovercard" href="https://github.com/mridoni/gixsql/issues/122">#122</a>)</li>
+<li>Fixed "FR for USAGE VARRAW alias to VARYING" (<a aria-label="Issue #120" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1356871949" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/120" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/120/hovercard" href="https://github.com/mridoni/gixsql/issues/120">#120</a>)</li>
+<li>Fixed "leak in dbi-&gt;fetch_one and potentially other places" (<a aria-label="Issue #111" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1349609113" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/111" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/111/hovercard" href="https://github.com/mridoni/gixsql/issues/111">#111</a>)</li>
+<li>Fixed "Return more details on the actual error instead of "invalid column data"" (<a aria-label="Issue #109" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1349554939" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/109" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/109/hovercard" href="https://github.com/mridoni/gixsql/issues/109">#109</a>)</li>
+<li>Fixed "FR gixpp option handling: add alias for source basename" (<a aria-label="Issue #53" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1244208159" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/53" data-hovercard-type="issue" data-hovercard-url="/mridoni/gixsql/issues/53/hovercard" href="https://github.com/mridoni/gixsql/issues/53">#53</a>)</li>
+<li>Modified scanner/parser to improve handling of subqueries</li>
+<li>Added Debian 10/11 binary packages</li>
+<li>Added GitHub Actions workflow for easier testing</li>
+<li>The test suite is now documented</li>
+<li>SQLCA is now set on success (PR <a aria-label="Pull request #137" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1517546670" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/137" data-hovercard-type="pull_request" data-hovercard-url="/mridoni/gixsql/pull/137/hovercard" href="https://github.com/mridoni/gixsql/pull/137">#137</a> by Simon Sobisch)</li>
+<li>The gixsql wrapper now uses the correct directory for SQLCA (PR <a aria-label="Pull request #134" class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1503205815" data-permission-text="Title is private" data-url="https://github.com/mridoni/gixsql/issues/134" data-hovercard-type="pull_request" data-hovercard-url="/mridoni/gixsql/pull/134/hovercard" href="https://github.com/mridoni/gixsql/pull/134">#134</a> by Simon Sobisch)</li>
+<li>Fixed Windows binary packaging: dependencies are now correctly selected and included</li>
+</ul>
+<p>Available, as usual, on the <a href="https://github.com/mridoni/gixsql/releases/tag/v1.0.20" target="_blank" rel="noopener noreferrer">Release page</a> on GitHub.</p>
+<p>As usual, <a href="https://paypal.me/mridoni" target="_blank" rel="noopener noreferrer">donations </a>or <a href="https://github.com/sponsors/mridoni" target="_blank" rel="noopener noreferrer">sponsors</a> are welcome.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>GixSQL v1.0.20dev1 is out</title>
         <author>
@@ -378,29 +418,6 @@
 <li>When debugging on Windows, a "stray" console window appear, this is probably from some logging artifact</li>
 </ul>
 <p>As usual, the release is <a href="https://github.com/mridoni/gix/releases/tag/v1.1.0dev1" target="_blank" rel="noopener noreferrer">available on GitHub</a></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>&quot;New debugger&quot; source available</title>
-        <author>
-            <name>Marco Ridoni</name>
-        </author>
-        <link href="https://mridoni.github.io/new-debugger-source-available.html"/>
-        <id>https://mridoni.github.io/new-debugger-source-available.html</id>
-
-        <updated>2022-10-30T09:39:46+01:00</updated>
-            <summary>
-                <![CDATA[
-                    The new-debugger branch has been merged into main on GitHub. The corresponding binary packages will be available in a few days with a new pre-release (most likely as v1.1.0dev1). The packaging process is almost complete: the workflows included in the repository can already be used to build the binary packages, but there are still a few details I want to iron out before distributing the packages: this will still be a pre-release and it's a&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>The <em>new-debugger</em> branch has been merged into <em>main </em>on GitHub. The corresponding binary packages will be available in a few days with a new pre-release (most likely as v1.1.0dev1). </p>
-<p>The packaging process is almost complete: the workflows included in the repository can already be used to build the binary packages, but there are still a few details I want to iron out before distributing the packages: this will still be a pre-release and it's a milestone that will help me to streamline the development process, but obviously I would like it to push it out without major bugs or blocking issues.</p>
-<p>The Windows binary packages will also be signed, for the first time, with a code signing certificate. I really dislike the practices that seem rampant in the "security industry", with prices that seem to bear no relation to the actual product <span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">b</span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">eing sold </span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">(including the identity verification, not just the certificate). </span>Nevertheless, since Gix-IDE is not-so-easy to build and package for ordinary users, and the SmartScreen alert on Windows had some people justifiably worried, I decided to bite the bullet.</p>
-<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Side note: I sincerely hope that someone at SigStore (and Microsoft) comes to the realization that software does not mean only containers and images but also old-fashioned software packages. To be clear: SigStore is great but, in my very own opinion, its lack of attention (so far) towards a great part of the computing world, apart from making it useless in many cases, is a disappointment.</span></p>
             ]]>
         </content>
     </entry>
