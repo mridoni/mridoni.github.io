@@ -3,7 +3,7 @@
     <title>mridoni&#x27;s development blog</title>
     <link href="https://mridoni.github.io/feed.xml" rel="self" />
     <link href="https://mridoni.github.io" />
-    <updated>2023-02-09T20:09:22+01:00</updated>
+    <updated>2023-02-13T16:42:04+01:00</updated>
     <author>
         <name>Marco Ridoni</name>
     </author>
@@ -124,7 +124,7 @@
         <link href="https://mridoni.github.io/gix-ide-v111-is-out.html"/>
         <id>https://mridoni.github.io/gix-ide-v111-is-out.html</id>
 
-        <updated>2022-12-19T15:11:24+01:00</updated>
+        <updated>2023-02-13T16:42:04+01:00</updated>
             <summary>
                 <![CDATA[
                     This is a release for Gix-IDE that improves on 1.1.1 and fixes a few problems. The "standard" debugger is still the recommended one, but the "experimental" version is functional both on Windows and Linux. This release also arrives with new binary packages for Debian 10 and 11. Binary packages available A summary of new features and fixes Known bugs and issues Available, as usual, on the Release page on GitHub. As usual, donations or sponsors are welcome.
@@ -169,7 +169,7 @@
 <ul>
 <li>The new Output/Error windows still have some small quirks (some messages not being displayed, UI glitches, etc.).</li>
 </ul>
-<p>Available, as usual, on the <a href="https://github.com/mridoni/gix/releases/tag/v1.1.0" target="_blank" rel="noopener noreferrer">Release page</a> on GitHub.</p>
+<p>Available, as usual, on the <a href="https://github.com/mridoni/gix/releases/tag/v1.1.1" target="_blank" rel="noopener noreferrer">Release page</a> on GitHub.</p>
 <p>As usual, <a href="https://paypal.me/mridoni" target="_blank" rel="noopener noreferrer">donations </a>or <a href="https://github.com/sponsors/mridoni" target="_blank" rel="noopener noreferrer">sponsors</a> are welcome.</p>
             ]]>
         </content>
